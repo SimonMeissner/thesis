@@ -1,0 +1,52 @@
+\begin{thebibliography}{1}
+
+\bibitem{Andrienko.2003}
+Natalia Andrienko, Gennady Andrienko, and Peter Gatalsky.
+\newblock Exploratory spatio-temporal visualization: an analytical review.
+\newblock 14(6):503--541, 2003.
+\newblock PII: S1045926X03000466.
+
+\bibitem{Hinckley.2004}
+Ken Hinckley, Robert J.~K. Jacob, and Colin Ware.
+\newblock Input/output devices and interaction techniques.
+\newblock In Allen~B. Tucker, editor, {\em Computer Science Handbook}. {Chapman and Hall/CRC}, 2nd edition, 2004.
+
+\bibitem{Keim.2005}
+Daniel~A. Keim.
+\newblock Chapter 2 - information visualization: Scope, techniques and opportunities for geovisualization.
+\newblock In Jason Dykes, Menno-Jan Kraak, and Alan~M. MacEachren, editors, {\em Exploring Geovisualization}, pages 21--52. 2005.
+
+\bibitem{Lobo.2015}
+Mar{\'i}a-Jes{\'u}s Lobo, Emmanuel Pietriga, and Caroline Appert.
+\newblock An evaluation of interactive map comparison techniques.
+\newblock In Bo~Begole and Jinwoo Kim, editors, {\em CHI15: Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems}, pages 3573--3582. {Association for Computing Machinery, New York, United States}, 2015.
+
+\bibitem{Roth.2013}
+Robert~E. Roth.
+\newblock An empirically-derived taxonomy of interaction primitives for interactive cartography and geovisualization.
+\newblock 19(12):2356--2365, 2013.
+\newblock Journal Article.
+
+\bibitem{Sarikaya.2018}
+Alper Sarikaya, Michael Correll, Lyn Bartram, Melanie Tory, and Danyel Fisher.
+\newblock What do we talk about when we talk about dashboards?
+\newblock 2018.
+\newblock Journal Article.
+
+\bibitem{vanTonder.2011}
+Bradley {van Tonder} and Janet Wesson.
+\newblock Intellitilt: An enhanced tilt interaction technique for mobile map-based applications.
+\newblock In Pedro Campos, Nicholas Graham, Joaquim Jorge, Philippe Palanque, and Marco Winckler, editors, {\em Human-Computer Interaction -- INTERACT 2011}, volume 6947, pages 505--523. {Springer Berlin Heidelberg}, 2011.
+
+\bibitem{Wehrend.1990}
+S.~Wehrend and C.~Lewis.
+\newblock A problem-oriented classification of visualization techniques.
+\newblock In Arie Kaufman, editor, {\em Proceedings of the First IEEE Conference on Visualization: Visualization `90}, pages 139--143, 1990.
+
+\bibitem{Yigitbasioglu.2012}
+Ogan~M. Yigitbasioglu and Oana Velcu.
+\newblock A review of dashboards in performance management: Implications for design and research.
+\newblock 13(1):41--59, 2012.
+\newblock PII: S1467089511000443.
+
+\end{thebibliography}
