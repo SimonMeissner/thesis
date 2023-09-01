@@ -4,50 +4,53 @@ The top-level auxiliary file: text.aux
 The style file: plain.bst
 Database file #1: references.bib
 Warning--empty journal in Andrienko.2003
+Warning--empty journal in Buja.1996
+Warning--empty journal in Crampton.2002
+Warning--empty journal in Gorte.2022
 Warning--empty publisher in Keim.2005
 Warning--empty journal in Roth.2013
 Warning--empty journal in Sarikaya.2018
 Warning--can't use both volume and number fields in vanTonder.2011
 Warning--empty journal in Yigitbasioglu.2012
-You've used 9 entries,
+You've used 12 entries,
             2118 wiz_defined-function locations,
-            572 strings with 6014 characters,
-and the built_in function-call counts, 3799 in all, are:
-= -- 374
-> -- 179
+            593 strings with 6367 characters,
+and the built_in function-call counts, 4738 in all, are:
+= -- 469
+> -- 217
 < -- 5
-+ -- 69
-- -- 56
-* -- 266
-:= -- 608
-add.period$ -- 35
-call.type$ -- 9
-change.case$ -- 50
++ -- 84
+- -- 68
+* -- 339
+:= -- 766
+add.period$ -- 44
+call.type$ -- 12
+change.case$ -- 65
 chr.to.int$ -- 0
-cite$ -- 15
-duplicate$ -- 152
-empty$ -- 296
-format.name$ -- 56
-if$ -- 814
+cite$ -- 21
+duplicate$ -- 185
+empty$ -- 371
+format.name$ -- 68
+if$ -- 1001
 int.to.chr$ -- 0
-int.to.str$ -- 9
-missing$ -- 9
-newline$ -- 52
-num.names$ -- 28
-pop$ -- 60
+int.to.str$ -- 12
+missing$ -- 12
+newline$ -- 67
+num.names$ -- 34
+pop$ -- 75
 preamble$ -- 1
-purify$ -- 40
+purify$ -- 52
 quote$ -- 0
-skip$ -- 113
+skip$ -- 134
 stack$ -- 0
-substring$ -- 252
+substring$ -- 324
 swap$ -- 45
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 36
-warning$ -- 6
-while$ -- 41
-width$ -- 10
-write$ -- 108
-(There were 6 warnings)
+type$ -- 48
+warning$ -- 9
+while$ -- 53
+width$ -- 14
+write$ -- 138
+(There were 9 warnings)

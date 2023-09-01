@@ -1,10 +1,25 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{Andrienko.2003}
 Natalia Andrienko, Gennady Andrienko, and Peter Gatalsky.
 \newblock Exploratory spatio-temporal visualization: an analytical review.
 \newblock 14(6):503--541, 2003.
 \newblock PII: S1045926X03000466.
+
+\bibitem{Buja.1996}
+Andreas Buja, Dianne Cook, and Deborah~F. Swayne.
+\newblock Interactive high-dimensional data visualization.
+\newblock 5(1):78--99, 1996.
+
+\bibitem{Crampton.2002}
+Jeremy~W. Crampton.
+\newblock Interactivity types in geographic visualization.
+\newblock 29(2):85--89, 2002.
+
+\bibitem{Gorte.2022}
+Viktor Gorte and Auriol Degbelo.
+\newblock Choriented maps: Visualizing sdg data on mobile devices.
+\newblock 59(1):35--54, 2022.
 
 \bibitem{Hinckley.2004}
 Ken Hinckley, Robert J.~K. Jacob, and Colin Ware.
