@@ -1,4 +1,4 @@
-\documentclass[12pt, twoside]{report}
+\documentclass[12pt, twoside]{article}
 % Packages
 \usepackage[utf8]{inputenc} % Input encoding (choose the appropriate encoding for your system)
 \usepackage[T1]{fontenc} % Font encoding for better output
@@ -22,6 +22,9 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0.8em}
 
+% title customization
+
+
 % -----------------------
 % Tile page
 \title{Designing interaction techniques for the comparison of spatial entities in the context of geodashboards}
@@ -33,12 +36,12 @@
 
 % Title page
 \maketitle
-
+\newpage
 % Abstract
 \begin{abstract}
 % Your abstract goes here
 \end{abstract}
-
+\newpage
 % Table of Contents
 \tableofcontents
 
@@ -48,8 +51,9 @@
 % List of Tables (if applicable)
 % \listoftables
 
-% Chapters
-\chapter{Introduction}
+\newpage
+
+\section{Introduction}
 The growing usage of dashboards to represent data across a range of different 
 fields suggests a need for research on layout and design features of dashboards 
 and their influence on the user experience \citep*{Yigitbasioglu.2012,Sarikaya.2018}.
@@ -62,7 +66,7 @@ dataset \citep{Wehrend.1990}. This doesn't exclude the field of geovisualization
 geodashboards. There are many different perspectives that all reasonably try to define
 taxonomies and or classification models that all have their application for
 spatio-temporal data exploration and/or analysis
-\citep*{Andrienko.2003,Buja.1996,Crampton.2002}.
+\citep*{Andrienko.2003,Crampton.2002}.
 
 But Roth has shown that a functional taxonomy of interaction primitives can be
 empirically derived. He identified general tasks users want to accomplish (objective
@@ -79,29 +83,32 @@ visualizations \citep{Roth.2013}.
 
 Instead of dealing with layout and design features directly, this work will focus on
 interaction techniques as they also imply design decisions. As we have seen it is
-reasonable to focus on a specific usecase in geodashboards. In this work we will focus
-on the task of comparison of spatial features in geodashboards.
-
-Sources who proposed comparison as an interactivity task
-\citep*{Crampton.2002,Buja.1996,Gorte.2022}.
+reasonable to focus on a specific usecase in geodashboards. This work will deal with
+on the derived objective primitive of \textit{comparison} from Roth's work. But not
+only Roth speaks about comparison. Wehrend describes \textit{compare} as a seperate
+operation class in visualization problem \citep{Wehrend.1990} and Brehmer et al.
+speak of comparison as a low level visualization task \citep*{Brehmer.2013}. In the
+scope of geovisualizations Crampton identified \textit{compare} as an interactivity task
+\citep{Crampton.2002} and Gorte and Degbelo argue that \textit{comparison} is a basic
+task that is relevant in exploratoy and confirmatory analysis \citep{Gorte.2022}.
 
 Distingiushes between two dimensions of comparison. Comparisons of
 variables or projections, and comparison of subset of the data \citep*{Buja.1996}.
 
 
-\chapter{Literature Review}
+\section{Literature Review}
 % Your literature review goes here
 
-\chapter{Methodology}
+\section{Methodology}
 % Your methodology goes here
 
-\chapter{Results}
+\section{Results}
 % Your results go here
 
-\chapter{Discussion}
+\section{Discussion}
 % Your discussion goes here
 
-\chapter{Conclusion}
+\section{Conclusion}
 % Your conclusion goes here
 
 % Bibliography
