@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.28)  5 SEP 2023 15:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.28)  8 OCT 2023 13:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -357,26 +357,32 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write4
 \openout4 = `text.toc'.
 
- [3] (./text.bbl
+ [3]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4] [5]) [6] (./text.aux)
+ [4]
+Underfull \vbox (badness 1168) has occurred while \output is active []
+
+ [5] (./text.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6] [7]) [8] (./text.aux)
 Package rerunfilecheck Info: File `text.out' has not changed.
-(rerunfilecheck)             Checksum: C92FB89DAF9EB8FDF3BE66CDA413B474;596.
+(rerunfilecheck)             Checksum: F70D7C6275EBD1A726047EE4F8A0797E;586.
  ) 
 Here is how much of TeX's memory you used:
- 10598 strings out of 476025
- 163300 string characters out of 5790017
- 1858388 words of memory out of 5000000
- 30888 multiletter control sequences out of 15000+600000
- 522045 words of font info for 53 fonts, out of 8000000 for 9000
+ 10609 strings out of 476025
+ 163439 string characters out of 5790017
+ 1859388 words of memory out of 5000000
+ 30892 multiletter control sequences out of 15000+600000
+ 522820 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,76p,381b,570s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on text.pdf (6 pages, 150876 bytes).
+ 75i,6n,76p,406b,574s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on text.pdf (8 pages, 170682 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
- 114 compressed objects within 2 object streams
- 28 named destinations out of 1000 (max. 500000)
+ 163 PDF objects out of 1000 (max. 8388607)
+ 135 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
  49 words of extra memory for PDF output out of 10000 (max. 10000000)
 

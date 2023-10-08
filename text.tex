@@ -27,9 +27,9 @@
 
 % -----------------------
 % Tile page
-\title{Designing interaction techniques for the comparison of spatial entities in the context of geodashboards}
+\title{Modeling the performance of  interaction techniques for the comparison of spatial entities in the context of geo-dashboards}
 \author{Simon Meißner}
-\date{August 2023}
+\date{November 2023}
 
 % Begin the document
 \begin{document}
@@ -65,17 +65,15 @@ user interaction in a dashboard application for exploration and/or analysis of t
 dataset \citep{Wehrend.1990}. This doesn't exclude the field of geovisualizations and
 geodashboards. There are many different perspectives that all reasonably try to define
 taxonomies and or classification models that all have their application for
-spatio-temporal data exploration and/or analysis
-\citep*{Andrienko.2003,Crampton.2002}.
-
-But Roth has shown that a functional taxonomy of interaction primitives can be
+spatio-temporal data exploration and/or analysis \citep*{Andrienko.2003,Crampton.2002}.
+Roth has shown that a functional taxonomy of interaction primitives can be
 empirically derived. He identified general tasks users want to accomplish (objective
 primitives) \citep{Roth.2013}.
 
-An interaction techniques as broadly defined in the Computer Science Handbook from 2004
+An interaction technique as broadly defined in the Computer Science Handbook from 2004
 is "the fusion of input and output, consisting of all hardware and software elements, 
 that provides  a way for the user to accomplish a task.” \citep*{Hinckley.2004}. In the
-context of geovisualizations and geodashboards interaction techniques have been
+context of geovisualizations and geodashboards, interaction techniques have been
 researched \citep*{Keim.2005,Lobo.2015,Roth.2013,vanTonder.2011}.
 Roth also describes an interaction technique in the context of geovisualizations as the
 functionality of an given interface and the procedures of manipulating its
@@ -84,25 +82,86 @@ visualizations \citep{Roth.2013}.
 Instead of dealing with layout and design features directly, this work will focus on
 interaction techniques as they also imply design decisions. As we have seen it is
 reasonable to focus on a specific usecase in geodashboards. This work will deal with
-on the derived objective primitive of \textit{comparison} from Roth's work. But not
-only Roth speaks about comparison. Wehrend describes \textit{compare} as a seperate
+the derived objective primitive of \textit{comparison} from Roth's work. But not
+only Roth writes about comparison. Wehrend describes \textit{compare} as a seperate
 operation class in visualization problem \citep{Wehrend.1990} and Brehmer et al.
 speak of comparison as a low level visualization task \citep*{Brehmer.2013}. In the
 scope of geovisualizations Crampton identified \textit{compare} as an interactivity task
 \citep{Crampton.2002} and Gorte and Degbelo argue that \textit{comparison} is a basic
 task that is relevant in exploratoy and confirmatory analysis \citep{Gorte.2022}.
 
-Distingiushes between two dimensions of comparison. Comparisons of
-variables or projections, and comparison of subset of the data \citep*{Buja.1996}.
+Buja Distingiushes between two dimensions of comparison. The first
+describes the goal of comparing different variables or projections of the whoel dataset.
+The second describes the goal of comparing subsets of the whole dataset against each
+other \citep*{Buja.1996}. This work will only focus on the latter. 
+We will examine two broadly used interaction techniques: \textit{filtering} and
+\textit{highlighting} \citep*{Keim.2005,Roth.2013}. The literature also often use the term \textit{brushing} 
+to describe highlighting but mean the process of visualy emphasizing one or more features from the
+whole dataset. For the rest of this work we will use the term \textit{highlighting}.
+They follow one of the proposed user strategies
+\textit{Select Subset} from Gleichner \citep*{Gleicher.2018}. We will focus more on what to 
+consider when designing visualizations for comparison in section 2. Here we will also summarize other
+related work and write of the implications for our experiment design.
+
+To investigating the performance of these interaction techniques in the context of comparison we
+conducted a user study in which participants try to answer questions with the goal of finding
+difference and/or similarities of features. To answer the questions they are using a specially 
+builded digital web-prototype with six different dashboard variants. The dashboards vary in their
+interaction technique and some render additional views utilizing \textit{explicit encoding} as it
+is defined as one of the basic designs for visual comparison \citep*{Gleicher.2018}. The goal of
+the experiment is to find mathematical models that best approximate answer time and accuracy during 
+the comparison of features in geodashboards. With special interest for the differences between the
+selected interaction techniques. We want to learn about the different factors and how they influence
+answer time and accuracy in this setting. Therefore we can infer two research questions from this work:
+\begin{enumerate}
+    \item Which mathematical models best describe performance during the comparison of spatial entities
+    in the context of geodashboards?
+    \item Which interaction technique best supports the task of comparison in the context of
+    geodashboards? 
+\end{enumerate}
+Section 3 will describe in detail how the digital web-prototype looked and how it was built. How the
+experiment was designed and what factors that possibly influence comparison performance were considered
+are covered in section 4. Here we will also present the results of the experiment and propose our found
+mathematical models.
+As this experiment only covers a selection of possible factors that possible influence difficulty and
+accuracy during the comparison of features in geodashboards, this work should be a starting point for
+further research. Because comparison can be of many different kinds and cover different scopes this work
+also opens the door for more reseach in different comparison settings. Section 5 discusses such limitations
+in depth, how our research questions can be answered and how our findings can be transferred to other domains.
+Lastly we will sumarize our key-learnings and propose future work that has to be done in the last section.
 
 
-\section{Literature Review}
+\section{Related Work}
 % Your literature review goes here
+\subsection*{Comparison}
+Gleichner writes about four considerations when visualizing comparison \citep*{Gleicher.2018}.
+At first we have to identify our comparison elements. Because every comparison task in our
+study focuses on comparing two or three features of the dataset we can descibe our targets as
+'explicit targets' as every item is known and already available. From Gleichners proposed
+actions on relationships between targets our comparison task fall into the \textit{Identify}
+and \textit{Measure/Quantify/Summarize} categories. Second we have to identify comparitive
+challenges. The number of targets should not add much complexity as we are only using two
+or three targets. Because we are using timeseries with only one observed variable the
+complexity of each individual item is also fairly low. As we are only identifying and
+measuring direct differences or differences between differences of targets the complexity
+of the relationships is low to moderate. Gleichner next proposes to deal with a scalability
+strategie. To reduce scale challenges the strategies of \textit{Select Subset} and 
+\textit{Summarize Somehow} are utilized. In all dashboard variants either \textit{filtering} or
+\textit{highlighting} as an interaction technique is used which help with scale because subsets
+are created. In some variants additional views are rendered that already encode the
+difference of two targets which summarize a relation. Lastly we have to consider design
+visualizations. Across all dashboard variants all three basic visual designs for comparison
+are utilized as each have their benefits and drawbacks. Because we deal with temporal data
+all graph views are utilizing \textit{superposition}. To reduce scalability problems either
+\textit{filtering} or \textit{highlighting} are utilized as already mentioned. Our table views
+use a combination of \textit{super} - and \textit{juxtapostion} as showing each datapoint in the
+same place would hinder readability. Finally because our actions on the targets include comparing
+differences between targets we included \textit{explicit encoding} in some dashboard variants.
 
 \section{Methodology}
 % Your methodology goes here
 
-\section{Results}
+\section{Evaluation}
 % Your results go here
 
 \section{Discussion}

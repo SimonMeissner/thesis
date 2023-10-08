@@ -3,34 +3,37 @@
 \bibitem{Andrienko.2003}
 Natalia Andrienko, Gennady Andrienko, and Peter Gatalsky.
 \newblock Exploratory spatio-temporal visualization: an analytical review.
-\newblock 14(6):503--541, 2003.
-\newblock PII: S1045926X03000466.
+\newblock {\em Journal of Visual Languages {\&} Computing}, 14(6):503--541, 2003.
 
 \bibitem{Brehmer.2013}
 Matthew Brehmer and Tamara Munzner.
 \newblock A multi-level typology of abstract visualization tasks.
-\newblock 19(12):2376--2385, 2013.
-\newblock Journal Article Research Support, Non-U.S. Gov't.
+\newblock {\em IEEE transactions on visualization and computer graphics}, 19(12):2376--2385, 2013.
 
 \bibitem{Buja.1996}
 Andreas Buja, Dianne Cook, and Deborah~F. Swayne.
 \newblock Interactive high-dimensional data visualization.
-\newblock 5(1):78--99, 1996.
+\newblock {\em Journal of Computational and Graphical Statistics}, 5(1):78--99, 1996.
 
 \bibitem{Crampton.2002}
 Jeremy~W. Crampton.
 \newblock Interactivity types in geographic visualization.
-\newblock 29(2):85--89, 2002.
+\newblock {\em Cartography and Geographic Information Science}, 29(2):85--89, 2002.
+
+\bibitem{Gleicher.2018}
+Michael Gleicher.
+\newblock Considerations for visualizing comparison.
+\newblock {\em IEEE transactions on visualization and computer graphics}, 24(1):413--423, 2018.
 
 \bibitem{Gorte.2022}
 Viktor Gorte and Auriol Degbelo.
 \newblock Choriented maps: Visualizing sdg data on mobile devices.
-\newblock 59(1):35--54, 2022.
+\newblock {\em The Cartographic Journal}, 59(1):35--54, 2022.
 
 \bibitem{Hinckley.2004}
 Ken Hinckley, Robert J.~K. Jacob, and Colin Ware.
 \newblock Input/output devices and interaction techniques.
-\newblock In Allen~B. Tucker, editor, {\em Computer Science Handbook}. {Chapman and Hall/CRC}, 2nd edition, 2004.
+\newblock In Allen~B. Tucker, editor, {\em Computer Science Handbook}. {Chapman and Hall/CRC}, New York, 2004.
 
 \bibitem{Keim.2005}
 Daniel~A. Keim.
@@ -40,24 +43,22 @@ Daniel~A. Keim.
 \bibitem{Lobo.2015}
 Mar{\'i}a-Jes{\'u}s Lobo, Emmanuel Pietriga, and Caroline Appert.
 \newblock An evaluation of interactive map comparison techniques.
-\newblock In Bo~Begole and Jinwoo Kim, editors, {\em CHI15: Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems}, pages 3573--3582. {Association for Computing Machinery, New York, United States}, 2015.
+\newblock In Bo~Begole and Jinwoo Kim, editors, {\em CHI15: Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems}, pages 3573--3582, Seoul Republic of Korea, 2015. {Association for Computing Machinery, New York, United States}.
 
 \bibitem{Roth.2013}
 Robert~E. Roth.
 \newblock An empirically-derived taxonomy of interaction primitives for interactive cartography and geovisualization.
-\newblock 19(12):2356--2365, 2013.
-\newblock Journal Article.
+\newblock {\em IEEE transactions on visualization and computer graphics}, 19(12):2356--2365, 2013.
 
 \bibitem{Sarikaya.2018}
 Alper Sarikaya, Michael Correll, Lyn Bartram, Melanie Tory, and Danyel Fisher.
 \newblock What do we talk about when we talk about dashboards?
-\newblock 2018.
-\newblock Journal Article.
+\newblock {\em IEEE transactions on visualization and computer graphics}, 2018.
 
 \bibitem{vanTonder.2011}
 Bradley {van Tonder} and Janet Wesson.
 \newblock Intellitilt: An enhanced tilt interaction technique for mobile map-based applications.
-\newblock In Pedro Campos, Nicholas Graham, Joaquim Jorge, Philippe Palanque, and Marco Winckler, editors, {\em Human-Computer Interaction -- INTERACT 2011}, volume 6947, pages 505--523. {Springer Berlin Heidelberg}, 2011.
+\newblock In Pedro Campos, Nicholas Graham, Joaquim Jorge, Philippe Palanque, and Marco Winckler, editors, {\em Human-Computer Interaction -- INTERACT 2011}, volume 6947, pages 505--523. {Springer Berlin Heidelberg}, Berlin, Heidelberg, 2011.
 
 \bibitem{Wehrend.1990}
 S.~Wehrend and C.~Lewis.
@@ -67,7 +68,6 @@ S.~Wehrend and C.~Lewis.
 \bibitem{Yigitbasioglu.2012}
 Ogan~M. Yigitbasioglu and Oana Velcu.
 \newblock A review of dashboards in performance management: Implications for design and research.
-\newblock 13(1):41--59, 2012.
-\newblock PII: S1467089511000443.
+\newblock {\em International Journal of Accounting Information Systems}, 13(1):41--59, 2012.
 
 \end{thebibliography}
