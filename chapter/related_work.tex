@@ -1,6 +1,24 @@
 \chapter{Related Work}
-% Your literature review goes here
-\section*{Comparison}
+\section{Geo-dashboards}
+\section{Multiple coordinated views}
+Multiple Coordinated Views (MCV) is a specifc exploratory visualization technique that allow users to explore data.
+It consists of multiple views that all encode the same data in different representations. Interactions and
+operations of the user are managed and synchronised between views \citep*{Roberts.722007722007}.
+
+Because of its popularity 20-30 years ago much of previous research in the field of MCV focused on
+scatterplot matrices \citep*{Carr.1987, Becker.1987}. Lawrence et al. used a specfic tool for the exploratory analysis of systems biology data
+and showed how \textit{highlighting} is an effective technique for discovering outliers \citep*{Lawrence.2006}.
+Carr et al. argue that \textit{highlighting} is the most common interaction technique in scatterplot matrices
+when working with subsets \citep*{Carr.1987, Becker.1987}. On the other hand they argue that if the subsets becomes larger
+another approach may be more suitable. They called it \textit{specify, then compute}.
+The idea is that a selection region is defined, similar to the highlighting procedure, then the subset
+is computed and finally a new display is rendered that only contains the subset. This describes our more
+modern idea of \textit{filtering}.
+
+Some contributions on interaction techniques in MCV systems define \textit{filtering} as a type of
+\textit{highlighting} or \textit{brushing} \citep*{Ward.}.
+
+\section{Comparison}
 Gleichner writes about four considerations when visualizing comparison \citep*{Gleicher.2018}.
 At first we have to identify our comparison elements. Because every comparison task in our
 study focuses on comparing two or three features of the dataset we can descibe our targets as
