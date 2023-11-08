@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.28)  29 OCT 2023 14:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.28)  7 NOV 2023 19:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -408,79 +408,87 @@ Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \rotheadsize=\dimen171
 \c@nlinenum=\count294
 \TeXr@lab=\toks26
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip81
+\enit@outerparindent=\dimen172
+\enit@toks=\toks27
+\enit@inbox=\box63
+\enit@count@id=\count295
+\enitdp@description=\count296
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count295
-\Gm@cntv=\count296
-\c@Gm@tempcnt=\count297
-\Gm@bindingoffset=\dimen172
-\Gm@wd@mp=\dimen173
-\Gm@odd@mp=\dimen174
-\Gm@even@mp=\dimen175
-\Gm@layoutwidth=\dimen176
-\Gm@layoutheight=\dimen177
-\Gm@layouthoffset=\dimen178
-\Gm@layoutvoffset=\dimen179
-\Gm@dimlist=\toks27
+\Gm@cnth=\count297
+\Gm@cntv=\count298
+\c@Gm@tempcnt=\count299
+\Gm@bindingoffset=\dimen173
+\Gm@wd@mp=\dimen174
+\Gm@odd@mp=\dimen175
+\Gm@even@mp=\dimen176
+\Gm@layoutwidth=\dimen177
+\Gm@layoutheight=\dimen178
+\Gm@layouthoffset=\dimen179
+\Gm@layoutvoffset=\dimen180
+\Gm@dimlist=\toks28
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count298
-\l__pdf_internal_box=\box63
-) (./thesis.aux (./chapter/abstract.aux) (./chapter/introduction.aux) (./chapter/related_work.aux) (./chapter/mathematical_models.aux) (./chapter/digital_webprototype.aux) (./chapter/user_study.aux) (./chapter/evaluation.aux) (./chapter/discussion.aux) (./chapter/conclusion.aux))
+\l__color_backend_stack_int=\count300
+\l__pdf_internal_box=\box64
+) (./thesis.aux (./chapter/abstract.aux) (./chapter/introduction.aux) (./chapter/related_work.aux) (./chapter/digital_webprototype.aux) (./chapter/user_study.aux) (./chapter/mathematical_models.aux) (./chapter/evaluation.aux) (./chapter/discussion.aux) (./chapter/conclusion.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-Package scrbase Info: activating english \abstractname on input line 39.
-Package scrbase Info: activating english \partname on input line 39.
-Package scrbase Info: activating english \chaptername on input line 39.
-Package scrbase Info: activating english \appendixname on input line 39.
-Package scrbase Info: activating english \figurename on input line 39.
-Package scrbase Info: activating english \tablename on input line 39.
-Package scrbase Info: activating english \contentsname on input line 39.
-Package scrbase Info: activating english \listfigurename on input line 39.
-Package scrbase Info: activating english \listtablename on input line 39.
-Package scrbase Info: activating english \bibname on input line 39.
-Package scrbase Info: activating english \indexname on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+Package scrbase Info: activating english \abstractname on input line 40.
+Package scrbase Info: activating english \partname on input line 40.
+Package scrbase Info: activating english \chaptername on input line 40.
+Package scrbase Info: activating english \appendixname on input line 40.
+Package scrbase Info: activating english \figurename on input line 40.
+Package scrbase Info: activating english \tablename on input line 40.
+Package scrbase Info: activating english \contentsname on input line 40.
+Package scrbase Info: activating english \listfigurename on input line 40.
+Package scrbase Info: activating english \listtablename on input line 40.
+Package scrbase Info: activating english \bibname on input line 40.
+Package scrbase Info: activating english \indexname on input line 40.
  (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count299
-\scratchdimen=\dimen180
-\scratchbox=\box64
-\nofMPsegments=\count300
-\nofMParguments=\count301
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count302
-\MPscratchDim=\dimen181
-\MPnumerator=\count303
-\makeMPintoPDFobject=\count304
-\everyMPtoPDFconversion=\toks29
+\scratchcounter=\count301
+\scratchdimen=\dimen181
+\scratchbox=\box65
+\nofMPsegments=\count302
+\nofMParguments=\count303
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count304
+\MPscratchDim=\dimen182
+\MPnumerator=\count305
+\makeMPintoPDFobject=\count306
+\everyMPtoPDFconversion=\toks30
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 39.
+Package hyperref Info: Link coloring OFF on input line 40.
  (./thesis.out) (./thesis.out)
 \@outlinefile=\write3
 \openout3 = `thesis.out'.
@@ -492,12 +500,12 @@ Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           `bookmarkpackage=false' before \begin{document} and
 (scrreprt)           you can avoid this message adding:
 (scrreprt)             \usepackage{bookmark}
-(scrreprt)           before \begin{document} on input line 39.
+(scrreprt)           before \begin{document} on input line 40.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
  (/usr/local/texlive/2023/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count305
+\BKM@id=\count307
 ))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -533,20 +541,20 @@ File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 43.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 44.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 <images/UniMuenster.png, id=4, 562.1pt x 181.67876pt>
 File: images/UniMuenster.png Graphic file (type png)
 <use images/UniMuenster.png>
-Package pdftex.def Info: images/UniMuenster.png  used on input line 45.
+Package pdftex.def Info: images/UniMuenster.png  used on input line 46.
 (pdftex.def)             Requested size: 241.84842pt x 78.16745pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 63.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 63.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -576,7 +584,7 @@ chapter 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.42 
+l.43 
       [1
 
 
@@ -586,72 +594,75 @@ l.42
 
  (./chapter/related_work.tex
 chapter 2.
-) [4
+[4
 
 
 
 
-] [5]
-\openout2 = `chapter/mathematical_models.aux'.
-
- (./chapter/mathematical_models.tex
-chapter 3.
-) [6
-
-
-
-
-]
+]) [5]
 \openout2 = `chapter/digital_webprototype.aux'.
 
  (./chapter/digital_webprototype.tex
-chapter 4.
-
-Overfull \hbox (37.59996pt too wide) in alignment at lines 7--11
- [] [] [] 
- []
-
-
-Overfull \hbox (37.59996pt too wide) in alignment at lines 11--16
- [] [] [] 
- []
-
-
-Overfull \hbox (37.59996pt too wide) in alignment at lines 16--18
- [] [] [] 
- []
-
-
-Overfull \hbox (37.59996pt too wide) in alignment at lines 18--21
- [] [] [] 
- []
-
-
-Overfull \hbox (37.59996pt too wide) in alignment at lines 21--53
- [] [] [] 
- []
-
-[7
-
-
-
-
-]) [8]
-\openout2 = `chapter/user_study.aux'.
-
- (./chapter/user_study.tex
-chapter 5.
-) [9
+chapter 3.
+[6
 
 
 
 
 ]
+Overfull \hbox (37.59996pt too wide) in alignment at lines 43--47
+ [] [] [] 
+ []
+
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 47--52
+ [] [] [] 
+ []
+
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 52--54
+ [] [] [] 
+ []
+
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 54--57
+ [] [] [] 
+ []
+
+
+Overfull \hbox (37.59996pt too wide) in alignment at lines 57--89
+ [] [] [] 
+ []
+
+[7] [8]) [9]
+\openout2 = `chapter/user_study.aux'.
+
+ (./chapter/user_study.tex
+chapter 4.
+) [10
+
+
+
+
+]
+\openout2 = `chapter/mathematical_models.aux'.
+
+ (./chapter/mathematical_models.tex
+\c@statementsi=\count308
+\enitdp@statements=\count309
+
+chapter 5.
+[11
+
+
+
+
+]) [12]
 \openout2 = `chapter/evaluation.aux'.
 
  (./chapter/evaluation.tex
 chapter 6.
-) [10
+) [13
 
 
 
@@ -661,7 +672,7 @@ chapter 6.
 
  (./chapter/discussion.tex
 chapter 7.
-) [11
+) [14
 
 
 
@@ -671,32 +682,32 @@ chapter 7.
 
  (./chapter/conclusion.tex
 chapter 8.
-) [12
+) [15
 
 
 
 
-] (./thesis.bbl [13
+] (./thesis.bbl [16
 
 
 
-]) [14] (./thesis.aux (./chapter/abstract.aux) (./chapter/introduction.aux) (./chapter/related_work.aux) (./chapter/mathematical_models.aux) (./chapter/digital_webprototype.aux) (./chapter/user_study.aux) (./chapter/evaluation.aux) (./chapter/discussion.aux) (./chapter/conclusion.aux))
+] [17]) [18] (./thesis.aux (./chapter/abstract.aux) (./chapter/introduction.aux) (./chapter/related_work.aux) (./chapter/digital_webprototype.aux) (./chapter/user_study.aux) (./chapter/mathematical_models.aux) (./chapter/evaluation.aux) (./chapter/discussion.aux) (./chapter/conclusion.aux))
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 15624 strings out of 476025
- 274804 string characters out of 5790017
- 1877388 words of memory out of 5000000
- 35752 multiletter control sequences out of 15000+600000
+ 16011 strings out of 476025
+ 281319 string characters out of 5790017
+ 1879388 words of memory out of 5000000
+ 36115 multiletter control sequences out of 15000+600000
  525414 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,9n,106p,10733b,592s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,9n,106p,10733b,630s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsi1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on thesis.pdf (17 pages, 279330 bytes).
+Output written on thesis.pdf (21 pages, 294392 bytes).
 PDF statistics:
- 289 PDF objects out of 1000 (max. 8388607)
- 233 compressed objects within 3 object streams
- 54 named destinations out of 1000 (max. 500000)
- 102 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 375 PDF objects out of 1000 (max. 8388607)
+ 314 compressed objects within 4 object streams
+ 74 named destinations out of 1000 (max. 500000)
+ 182 words of extra memory for PDF output out of 10000 (max. 10000000)
 

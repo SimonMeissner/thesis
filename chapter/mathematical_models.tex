@@ -1,6 +1,45 @@
 
-
+\newlist{statements}{enumerate}{1}
+\setlist[statements,1]{label=\arabic*., left=0.5cm}
 \chapter{Mathematical models}
+Because our dataset is limited, we have decided to use linear regression to try to derive a function that explains how
+a possible connection between user performance and our independent variables looks. Machine learning requires much more
+data to be effective.
+
+First we want to look at the user performance in terms of their time used to answer the question (in the following
+abbreviated with 'answer time'). Because we have such limited data available and because it simplifies the analization
+process we decided to include all datapoints, even if the answer was not correct.
+Inspired by Fitts‘ Law, which is often used in HCI (human computer interaction) we focus on one possible aspect of answer
+time. An index that describes the level of difficulty of the task to which the user has given an answer. We now want to
+look how all our independent variables influenced the DifficultyIndex.
+\section{Assumptions}
+One of the rationales of MCV is that more views on the same data, help with data exploration (if applied correctly).
+Because comparison is a type of data exploration we can assume that more views also help increase user performance in tasks
+that involve comparison. We can derive:
+\begin{statements}
+    \item A higher number of views on the same data will reduce the DifficultyIndex.
+\end{statements}
+The suitability of views change across different contexts. One context for example is what task is tried to be solved
+using the view. In our experiment, we used a total of four different task types, which are represented by the four question
+types. Half of the questions ask for comparison of numerical(\textit{attribute in space}) information and the other half
+asks for comparison of temporal(\textit{space in time}) information. Lohse et al. classify visual representations(views)
+depending on the type of information conveyed. They classified 11 different view types and empircally derived likert
+scores(1-9) for every type of information \citep*{Lohse.1994}. Among other things they classified \textit{time charts} and 
+\textit{tables} when dealing with \textit{temporal} or \textit{numerical} information. We use these empircal likert scores
+to quantify the quality of the views used when answering a specific question. Since each interaction technique uses at least
+one table and one time chart and we cannot predict which view the user will use, we need to calculate the mean likert score
+of both views for a given question type. In the experiment the question types have a second dimension. Questions could
+either be of type \textit{identify} or \textit{measure}. In our mathematical model we do not distinguish between these
+two types because we lack research that would help quantify view quality in those regards. We can conclude with the
+following assumption:
+\begin{statements}[resume]
+    \item A higher combined encoding quality of the views in relation to the type of question will reduce the
+    DifficultyIndex
+\end{statements}
+\begin{statements}[resume]
+    \item A higher number of distractors will increase the DifficultyIndex. Distractors are elements in the user interface
+    that impede the user to find the answer
+\end{statements}
 
 $
 F_{difficulty} = \frac{1}{n_{views}} + \frac{n_{targets}}{1} + Difficulty_{question-type} + Difficulty_{interaction-technique}

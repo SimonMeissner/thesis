@@ -4,9 +4,9 @@ The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: chapter/abstract.aux
 A level-1 auxiliary file: chapter/introduction.aux
 A level-1 auxiliary file: chapter/related_work.aux
-A level-1 auxiliary file: chapter/mathematical_models.aux
 A level-1 auxiliary file: chapter/digital_webprototype.aux
 A level-1 auxiliary file: chapter/user_study.aux
+A level-1 auxiliary file: chapter/mathematical_models.aux
 A level-1 auxiliary file: chapter/evaluation.aux
 A level-1 auxiliary file: chapter/discussion.aux
 A level-1 auxiliary file: chapter/conclusion.aux
@@ -16,45 +16,45 @@ Warning--empty publisher in Keim.2005
 Warning--empty booktitle in Ward.
 Warning--empty publisher in Ward.
 Warning--empty year in Ward.
-You've used 19 entries,
+You've used 22 entries,
             2118 wiz_defined-function locations,
-            653 strings with 8044 characters,
-and the built_in function-call counts, 7396 in all, are:
-= -- 748
-> -- 315
-< -- 8
-+ -- 124
-- -- 100
-* -- 526
-:= -- 1181
-add.period$ -- 62
-call.type$ -- 19
-change.case$ -- 101
+            672 strings with 8477 characters,
+and the built_in function-call counts, 8440 in all, are:
+= -- 851
+> -- 364
+< -- 9
++ -- 143
+- -- 115
+* -- 596
+:= -- 1352
+add.period$ -- 72
+call.type$ -- 22
+change.case$ -- 115
 chr.to.int$ -- 0
-cite$ -- 23
-duplicate$ -- 294
-empty$ -- 594
-format.name$ -- 100
-if$ -- 1580
+cite$ -- 26
+duplicate$ -- 338
+empty$ -- 681
+format.name$ -- 115
+if$ -- 1805
 int.to.chr$ -- 0
-int.to.str$ -- 19
-missing$ -- 19
-newline$ -- 98
-num.names$ -- 48
-pop$ -- 106
+int.to.str$ -- 22
+missing$ -- 21
+newline$ -- 112
+num.names$ -- 57
+pop$ -- 124
 preamble$ -- 1
-purify$ -- 82
+purify$ -- 94
 quote$ -- 0
-skip$ -- 213
+skip$ -- 241
 stack$ -- 0
-substring$ -- 546
-swap$ -- 81
-text.length$ -- 8
+substring$ -- 605
+swap$ -- 92
+text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 76
+type$ -- 87
 warning$ -- 4
-while$ -- 84
-width$ -- 21
-write$ -- 215
+while$ -- 96
+width$ -- 24
+write$ -- 247
 (There were 4 warnings)

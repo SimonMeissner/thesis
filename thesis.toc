@@ -2,12 +2,22 @@
 \contentsline {chapter}{\numberline {2}Related Work}{4}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Geo-dashboards}{4}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Multiple coordinated views}{4}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Comparison}{4}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Mathematical models}{6}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Digital Web-prototype}{7}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Non-/Functionl requirements}{7}{section.4.1}%
-\contentsline {chapter}{\numberline {5}User Study}{9}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Evaluation}{10}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Discussion}{11}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Conclusion}{12}{chapter.8}%
+\contentsline {section}{\numberline {2.3}Comparison}{5}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Digital Web-prototype}{6}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Data}{6}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Interaction techniques}{6}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Layout \&\ Function}{6}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Coordination}{7}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Non-/Functionl requirements}{7}{section.3.5}%
+\contentsline {chapter}{\numberline {4}User Study}{10}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Goal}{10}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Variables}{10}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Participants}{10}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Design}{10}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Procedure \&\ Apparatus}{10}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Mathematical models}{11}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Assumptions}{11}{section.5.1}%
+\contentsline {chapter}{\numberline {6}Evaluation}{13}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Discussion}{14}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Conclusion}{15}{chapter.8}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

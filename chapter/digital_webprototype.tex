@@ -1,4 +1,40 @@
 \chapter{Digital Web-prototype}
+The prototype was build using the open-source web development framework next.js which provides react-based javascript or
+typescript applications with server-side rendering and static website generation. It was mostly selected because of its
+developer-friendly ecosystem especially regarding deployement. Another reason for this stack was the existing experience
+with react-based typescript and the light-weight and modern setup. The whole application makes use of a few react libraries.
+The most important beeing the popular "react-leaflet" library which drastically simplifies using leaflet maps in react
+applications. Other important libraries are: "zustand" to help with coordination, "recharts" to help building time lines and
+"tailwindcss" to ease building the css of the application. Because the experiment was designed to be held online the
+application needed to be deployed. For that we used the free deployment plan of vercel.com. Because the application only
+used non-personal static data there was no need for implementing a backend or an authentication system. Although the prototype
+took responsive behaviour into account the screen dimension of the user's device should not fall below 1280x720px. 
+\section{Data}
+spatial-temporal data
+dataset could be changed using a Dataset Control
+\section{Interaction techniques}
+\section{Layout \&\ Function}
+In addition to the static data, the entire application consisted of a simple frontend that served six different non-scrollable
+geodashboard variants. On entering the page the first variant was rendered. The other variants were reachable over a
+tab-based navigationbar at the top of the screen. A seventh tab was implemented to learn about the application and its use.
+Each variant was covered with an openstreet map that was centered on Germany covering the rest of the page. All states of
+Germany were rendered using the borders as polygon representations, building a cloropleth-map. Every polygon used the same
+blue fill color. All other elements in the dashboards were placed on top of this map. On every variant, two additional views
+were also rendered on top of each other, taking up the left third of the screen. The graph view in the top-left corner of the
+screen visualized the spatial temporal data by rendering 16 lines, each representing one of the 16 states of germany. The
+bottom-left view visualized a two-dimensional table connecting each state with each year containing a numerical value. The
+dataset control and another button, which will be termed "comparison control" were positioned in the middle third of the
+screen close to the navigationbar at the top. the comparison control offered the ability to select two or three of the 16
+states for comparison. After selecting the states and starting the comparison process on three of the six variants an additional
+graph view and an additional table view were rendered. In both views calculated differences between two states of the values
+of the selected states were displayed. In the graph view again as lines representing the temporal evolution of the differences
+and in the table view as simple numerical values for every year. Those are the already mentioned views that use
+\textit{explicit encoding} as defined by Gleicher \citep*{Gleicher.2018}. After starting the comparison process both views
+on the left are replaced which other views utilizing the different interaction techniques. \textit{Replace} is one of the
+three common operational models visual interfaces use on parameter change \citep*{Costabile.2004, Roberts.2008}. At any time the user can
+use the comparison control again to terminate the comparison process and all previously described changes are reverted.
+\section{Coordination}
+The whole prototype was designed with a focus on coordination and synchronization. 
 
 \section{Non-/Functionl requirements}
 

@@ -1,9 +1,17 @@
 \chapter{Related Work}
+In this chapter we want to summarize existing research with regard to our two interaction techniques:
+\textit{highlighting} and \textit{filtering}. First we will look at how the use of \textit{highlighting}
+and \textit{filtering} in the context of geodashboards is analysed. Second, we will also examine the
+interaction techniques in the context of multiple coordinated views because of its central role in our web-prototype.
 \section{Geo-dashboards}
 \section{Multiple coordinated views}
-Multiple Coordinated Views (MCV) is a specifc exploratory visualization technique that allow users to explore data.
+Multiple Coordinated Views (MCV) is a specific exploratory visualization technique that allow users to explore data.
 It consists of multiple views that all encode the same data in different representations. Interactions and
-operations of the user are managed and synchronised between views \citep*{Roberts.722007722007}.
+operations of the user are managed and synchronised between views \citep*{Roberts.722007722007}. Buja et al. argue that
+beeing able to pose queries graphically and viewing the response in the same visual field is a fundamental component
+\citep*{Buja.1996}. The principle is extensivly accepted and researched and Buja et al. even include it in their taxonomy
+for data visualization. They even mention \textit{highlighting}, one of our two researched interaction techniques,
+to often be a substantial part of MCV as it is one way pose queries about subsets graphically \citep*{Buja.1996}.
 
 Because of its popularity 20-30 years ago much of previous research in the field of MCV focused on
 scatterplot matrices \citep*{Carr.1987, Becker.1987}. Lawrence et al. used a specfic tool for the exploratory analysis of systems biology data
@@ -16,20 +24,20 @@ is computed and finally a new display is rendered that only contains the subset.
 modern idea of \textit{filtering}.
 
 Some contributions on interaction techniques in MCV systems define \textit{filtering} as a type of
-\textit{highlighting} or \textit{brushing} \citep*{Ward.}.
+\textit{highlighting} (\textit{brushing}) \citep*{Ward.}.
 
 \section{Comparison}
-Gleichner writes about four considerations when visualizing comparison \citep*{Gleicher.2018}.
+Gleicher writes about four considerations when visualizing comparison \citep*{Gleicher.2018}.
 At first we have to identify our comparison elements. Because every comparison task in our
 study focuses on comparing two or three features of the dataset we can descibe our targets as
-'explicit targets' as every item is known and already available. From Gleichners proposed
+'explicit targets' as every item is known and already available. From Gleichers proposed
 actions on relationships between targets our comparison task fall into the \textit{Identify}
 and \textit{Measure/Quantify/Summarize} categories. Second we have to identify comparitive
 challenges. The number of targets should not add much complexity as we are only using two
 or three targets. Because we are using timeseries with only one observed variable the
 complexity of each individual item is also fairly low. As we are only identifying and
 measuring direct differences or differences between differences of targets the complexity
-of the relationships is low to moderate. Gleichner next proposes to deal with a scalability
+of the relationships is low to moderate. Gleicher next proposes to deal with a scalability
 strategie. To reduce scale challenges the strategies of \textit{Select Subset} and 
 \textit{Summarize Somehow} are utilized. In all dashboard variants either \textit{filtering} or
 \textit{highlighting} as an interaction technique is used which help with scale because subsets

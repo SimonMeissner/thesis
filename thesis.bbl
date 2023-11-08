@@ -25,6 +25,10 @@ D.~B. Carr, R.~J. Littlefield, W.~L. Nicholson, and J.~S. Littlefield.
 \newblock Scatterplot matrix techniques for large n.
 \newblock {\em Journal of the American Statistical Association}, 82(398):424--436, 1987.
 
+\bibitem{Costabile.2004}
+Maria~Francesca Costabile, editor.
+\newblock {\em AVI04: International Conference on Advanced Visual Interfaces}. {Association for Computing Machinery, New York, United States}, 2004.
+
 \bibitem{Crampton.2002}
 Jeremy~W. Crampton.
 \newblock Interactivity types in geographic visualization.
@@ -59,6 +63,16 @@ Michael Lawrence, Eun~Kyung Lee, Dianne Cook, Heike Hofmann, and Eve~Syrkin Wurt
 Mar{\'i}a-Jes{\'u}s Lobo, Emmanuel Pietriga, and Caroline Appert.
 \newblock An evaluation of interactive map comparison techniques.
 \newblock In Bo~Begole and Jinwoo Kim, editors, {\em CHI15: Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems}, pages 3573--3582, Seoul Republic of Korea, 2015. {Association for Computing Machinery, New York, United States}.
+
+\bibitem{Lohse.1994}
+Gerald~L. Lohse, Kevin Biolsi, Neff Walker, and Henry~H. Rueter.
+\newblock A classification of visual representations.
+\newblock {\em Communications of the ACM}, 37(12):36--49, 1994.
+
+\bibitem{Roberts.2008}
+Jonathan~C. Roberts.
+\newblock Coordinated multiple views for exploratory geovisualization.
+\newblock In Martin Dodge, Mary McDerby, and Martin Turner, editors, {\em Geographic Visualization}, pages 25--48. Wiley, 2008.
 
 \bibitem{Roberts.722007722007}
 Jonathan~C. Roberts.
