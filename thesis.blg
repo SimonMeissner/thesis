@@ -16,45 +16,45 @@ Warning--empty publisher in Keim.2005
 Warning--empty booktitle in Ward.
 Warning--empty publisher in Ward.
 Warning--empty year in Ward.
-You've used 22 entries,
+You've used 24 entries,
             2118 wiz_defined-function locations,
-            672 strings with 8477 characters,
-and the built_in function-call counts, 8440 in all, are:
-= -- 851
-> -- 364
+            684 strings with 8870 characters,
+and the built_in function-call counts, 8912 in all, are:
+= -- 898
+> -- 384
 < -- 9
-+ -- 143
-- -- 115
-* -- 596
-:= -- 1352
-add.period$ -- 72
-call.type$ -- 22
-change.case$ -- 115
++ -- 152
+- -- 121
+* -- 612
+:= -- 1432
+add.period$ -- 80
+call.type$ -- 24
+change.case$ -- 124
 chr.to.int$ -- 0
-cite$ -- 26
-duplicate$ -- 338
-empty$ -- 681
-format.name$ -- 115
-if$ -- 1805
+cite$ -- 28
+duplicate$ -- 352
+empty$ -- 725
+format.name$ -- 121
+if$ -- 1908
 int.to.chr$ -- 0
-int.to.str$ -- 22
+int.to.str$ -- 24
 missing$ -- 21
-newline$ -- 112
-num.names$ -- 57
-pop$ -- 124
+newline$ -- 124
+num.names$ -- 61
+pop$ -- 141
 preamble$ -- 1
-purify$ -- 94
+purify$ -- 101
 quote$ -- 0
-skip$ -- 241
+skip$ -- 254
 stack$ -- 0
-substring$ -- 605
-swap$ -- 92
+substring$ -- 616
+swap$ -- 94
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 87
+type$ -- 95
 warning$ -- 4
-while$ -- 96
-width$ -- 24
-write$ -- 247
+while$ -- 100
+width$ -- 26
+write$ -- 271
 (There were 4 warnings)

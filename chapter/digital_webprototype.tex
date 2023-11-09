@@ -10,12 +10,29 @@ application needed to be deployed. For that we used the free deployment plan of 
 used non-personal static data there was no need for implementing a backend or an authentication system. Although the prototype
 took responsive behaviour into account the screen dimension of the user's device should not fall below 1280x720px. 
 \section{Data}
-spatial-temporal data
-dataset could be changed using a Dataset Control
+The data used in the web-prototype consists of two components. First we needed geodata of the states of germany. In terms of
+performance, low-resolution geojson data with a reference scale of 1:5000000 was used. The data is open and freely downloadable
+from the german federal agency for cartography and geodesy \citep*{gdz.bkg}. The questions in the study were about static
+spatio-temporal datasets which were about changes of thematic properties expressed through values of attributes. Meaning
+qualitative changes with numeric characteristics. According to Andrienko et al. this is one of three types of spatio-temporal
+data \citep*{Andrienko.2003}. On the other hand spatio-temporal datasets could have existential changes, features appear and
+disappear over time, or they could have changes in their spatial properties. Because we wanted to minimize learning effects
+when using the data and because every participant was going to answer eight questions, we decided to implement four different
+datasets. The dataset was switched after every question using the "dataset control" which will be explained later. All four datasets
+had the exact same structure. They were about qualitative numeric changes of one marker of all 16 states of germany and covered
+the years from 2008 to 2022.
 \section{Interaction techniques}
+In addition to the methods already presented: \textit{filtering} and \textit{highlighting}, we have decided to investigate a third
+method. It is a modification of the highlighting method. When features are selected for comparison, they are visually highlighted using
+\textit{different} colors. In classic highlighting, all selected features are highlighted in the \textit{same} color. For the rest of
+this work we will distinguish highlighting using the same color and highlighting using different colors by stating the first
+\textit{highlighting\_1} and the second \textit{highlighting\_2}.
+
 \section{Layout \&\ Function}
 In addition to the static data, the entire application consisted of a simple frontend that served six different non-scrollable
-geodashboard variants. On entering the page the first variant was rendered. The other variants were reachable over a
+geodashboard variants. Always two of the six variants implemented the same interaction technique. Variant 1 \&\ 4 used
+\textit{filtering}, variant 2 \&\ 5 used \textit{highlighting\_1} and variant 3 \&\ 6 used \textit{highlighting\_2}
+(see Table \ref{dashboard_variant_table}). On entering the page the first variant was rendered. The other variants were reachable over a
 tab-based navigationbar at the top of the screen. A seventh tab was implemented to learn about the application and its use.
 Each variant was covered with an openstreet map that was centered on Germany covering the rest of the page. All states of
 Germany were rendered using the borders as polygon representations, building a cloropleth-map. Every polygon used the same
@@ -23,24 +40,63 @@ blue fill color. All other elements in the dashboards were placed on top of this
 were also rendered on top of each other, taking up the left third of the screen. The graph view in the top-left corner of the
 screen visualized the spatial temporal data by rendering 16 lines, each representing one of the 16 states of germany. The
 bottom-left view visualized a two-dimensional table connecting each state with each year containing a numerical value. The
-dataset control and another button, which will be termed "comparison control" were positioned in the middle third of the
-screen close to the navigationbar at the top. the comparison control offered the ability to select two or three of the 16
+"dataset control" and another button, which will be termed "comparison control" were positioned in the middle third of the
+screen close to the navigationbar at the top. The comparison control offered the ability to select two or three of the 16
 states for comparison. After selecting the states and starting the comparison process on three of the six variants an additional
 graph view and an additional table view were rendered. In both views calculated differences between two states of the values
 of the selected states were displayed. In the graph view again as lines representing the temporal evolution of the differences
 and in the table view as simple numerical values for every year. Those are the already mentioned views that use
 \textit{explicit encoding} as defined by Gleicher \citep*{Gleicher.2018}. After starting the comparison process both views
 on the left are replaced which other views utilizing the different interaction techniques. \textit{Replace} is one of the
-three common operational models visual interfaces use on parameter change \citep*{Costabile.2004, Roberts.2008}. At any time the user can
-use the comparison control again to terminate the comparison process and all previously described changes are reverted.
-\section{Coordination}
+three common operational models visual interfaces use on parameter change \citep*{Costabile.2004, Roberts.2008}. At any time
+the user could use the comparison control again to terminate the comparison process and all previously described changes are
+reverted. The "dataset control" on the other hand allowed the user to change the currently selected dataset via button click.
+After switching the dataset all views were rerendered with new labels and values.
+
+\begin{longtable}{| p{0.15\linewidth} | p{0.50\linewidth} | p{0.25\linewidth}|}
+    \hline
+    \textbf{Variant} & \textbf{Interaction technique} & \textbf{Number of views} \\
+    \hline
+    \endfirsthead
+    \multicolumn{3}{l}{{\textit{Continued from previous page}}} \\
+    \hline
+    \textbf{Variant} & \textbf{Interaction technique} & \textbf{Number of views} \\
+    \hline
+    \endhead
+    \hline \multicolumn{3}{r}{{\textit{Continued on next page}}} \\
+    \endfoot
+    \hline
+    \caption{This table describes all dashboard variants visualized in the web-prototype. The number of views it rendered in "comparison mode" and the interaction technique is displayed \label{dashboard_variant_table}}\\
+    \endlastfoot
+    1 & \parbox{\linewidth}{\vspace{4pt} filtering} & 2\\
+    \hline
+    2 & \parbox{\linewidth}{\vspace{4pt} highlighting\_1} & 2\\
+    \hline
+    3 & \parbox{\linewidth}{\vspace{4pt} highlighting\_2} & 2\\
+    \hline
+    4 & \parbox{\linewidth}{\vspace{4pt} filtering} & 4\\
+    \hline
+    5 & \parbox{\linewidth}{\vspace{4pt} highlighting\_1} & 4\\
+    \hline
+    6 & \parbox{\linewidth}{\vspace{4pt} highlighting\_2} & 4\\
+\end{longtable}
+
+\section{Multiple Coordinated Views}
+As already stated earlier MCV systems are highly popular and can increase user performance. Baldonado et al. argue that they can provide utility
+by minimizing cognitive overhead created from a single complex view. On the other hand multiple view can increase cognitive overhead
+(e.g. context switching) and can raise system requirements. They propose guidelines to find out when to use MCV and how to use MCV
+with special focus on information visualization. One use of MCV in the web-prototype was the additional rendering of two views when
+entering the "comparison mode". This mechanism represents the stated example from Baldonado et al. of using MCV to display aggregates of
+the data.
+
 The whole prototype was designed with a focus on coordination and synchronization. 
 
 \section{Non-/Functionl requirements}
-
+This section describes all functional and non-functional requirements on the
+web-prototype. They are derived from all other things described in this chapter.
 
 % \renewcommand{\arraystretch}{3} % Adjust the value as needed
-\begin{longtable}{| p{0.05\linewidth} | p{0.75\linewidth} | p{0.2\linewidth}|}
+\begin{longtable}{| p{0.05\linewidth} | p{0.65\linewidth} | p{0.20\linewidth}|}
     \hline
     \textbf{Nr.} & \textbf{Requirement} & \textbf{Type} \\
     \hline
@@ -53,7 +109,7 @@ The whole prototype was designed with a focus on coordination and synchronizatio
     \hline \multicolumn{3}{r}{{\textit{Continued on next page}}} \\
     \endfoot
     \hline
-    \caption{This table describes all functional- and nonfunctional requirements of the web-prototype\label{requirement_table}}\\
+    \caption{This table describes all functional and non-functional requirements of the web-prototype \label{requirement_table}}\\
     \endlastfoot
     01 & \parbox{\linewidth}{\vspace{4pt}The app should visualize one spatial-temporal dataset with polygons on a map. Each polygon should represent a spatial entity} & Functional\\
     \hline
