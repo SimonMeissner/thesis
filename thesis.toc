@@ -1,23 +1,34 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Related Work}{4}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Geo-dashboards}{4}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Multiple coordinated views}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.1}Interaction technqiues \&\ Geo-dashboards}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Interaction techniques \&\ Multiple coordinated views}{4}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Comparison}{5}{section.2.3}%
 \contentsline {chapter}{\numberline {3}Digital Web-prototype}{6}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Data}{6}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Interaction techniques}{7}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Layout \&\ Function}{7}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Multiple Coordinated Views}{8}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Multiple coordinated views}{8}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Non-/Functionl requirements}{9}{section.3.5}%
 \contentsline {chapter}{\numberline {4}User Study}{12}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Goal}{12}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Variables}{12}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Participants}{12}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Design}{12}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Procedure \&\ Apparatus}{12}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Mathematical models}{13}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Assumptions}{13}{section.5.1}%
-\contentsline {chapter}{\numberline {6}Evaluation}{15}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Discussion}{16}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Conclusion}{17}{chapter.8}%
+\contentsline {section}{\numberline {4.3}Participants}{13}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Design}{13}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Procedure \&\ Apparatus}{14}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Mathematical models}{15}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Aggregated Variables}{15}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Answer time}{15}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Number of views}{16}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Quality of views}{16}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Distraction index}{17}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Difficulty index}{19}{subsection.5.2.4}%
+\contentsline {section}{\numberline {5.3}Answer accuracy}{19}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Discriminability index}{19}{subsection.5.3.1}%
+\contentsline {chapter}{\numberline {6}Evaluation}{21}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Answer time}{21}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Manipulating the distraction index}{21}{subsection.6.1.1}%
+\contentsline {section}{\numberline {6.2}Answer accuracy}{22}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Manipulating the discriminability index}{22}{subsection.6.2.1}%
+\contentsline {chapter}{\numberline {7}Discussion}{23}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Conclusion}{24}{chapter.8}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

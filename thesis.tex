@@ -13,9 +13,14 @@
 \usepackage{longtable}
 \usepackage{makecell}
 \usepackage{enumitem}
+\usepackage{latexsym}
 \graphicspath{{images/}}
 
 % Customization ---------
+% new environment for equation descriptions
+\newenvironment{conditions}
+{\par\vspace{\abovedisplayskip}\noindent\begin{tabular}{>{$}l<{$} @{${}:{}$} l}}
+{\end{tabular}\par\vspace{\belowdisplayskip}}
 
 % GEOMETRY
 % sets paper size, margins

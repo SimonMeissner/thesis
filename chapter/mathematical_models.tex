@@ -1,46 +1,154 @@
 
 \newlist{statements}{enumerate}{1}
+\newlist{equations}{enumerate}{1}
 \setlist[statements,1]{label=\arabic*., left=0.5cm}
 \chapter{Mathematical models}
-Because our dataset is limited, we have decided to use linear regression to try to derive a function that explains how
-a possible connection between user performance and our independent variables looks. Machine learning requires much more
-data to be effective.
-
-First we want to look at the user performance in terms of their time used to answer the question (in the following
-abbreviated with 'answer time'). Because we have such limited data available and because it simplifies the analization
-process we decided to include all datapoints, even if the answer was not correct.
+Because our dataset is limited, we use linear regression to try to derive a function that explains how a possible connection 
+between user performance and our independent variables looks. We decided against machine learning because it requires much more
+data to be effective. Because of our decision to use linear regression we had another reason to include several independent variables
+to gather enough observations because at least 10 different observations per independent varaible are needed to build regression
+models that deliver good results (quelle).
+\section{Aggregated Variables}
+Because our study used two nominal scaled variables and we want to analyse the results using linear regression we follow the process
+of builded aggregated variables. Those aggregated variables encode the different instances of the nominal scaled variables into
+continuous variables, which in turn enables linear regression. This requires existing knowledge, preferably empirically proven.
+\section{Answer time}
+First we want to look at the user performance in terms of their answer time. Because we have so little data available and
+because it simplifies the analysis process, we decided to include all data points, even if the answer was incorrect.
 Inspired by Fitts‘ Law, which is often used in HCI (human computer interaction) we focus on one possible aspect of answer
-time. An index that describes the level of difficulty of the task to which the user has given an answer. We now want to
-look how all our independent variables influenced the DifficultyIndex.
-\section{Assumptions}
-One of the rationales of MCV is that more views on the same data, help with data exploration (if applied correctly).
+time. An index that describes the level of difficulty of the task to which the user has given an answer.
+\begin{equation} \label{answerTimeEquation}
+    Answer_{time} = a_0 + a_1 * Index_{difficulty} + a_2 * X_2 + \dots + a_n * X_n
+\end{equation}
+
+\begin{conditions}
+    Index_{difficulty}     & difficulty of a specific question using one specific dashboard variant  \\
+    a_0                    & intercept \\
+    a_1                    & coefficient of the difficulty index \\
+    X_2\dots X_n           & other factors that also influence the answer time \\
+    a_2\dots a_n           & coefficients of other factors \\
+\end{conditions}
+We now want to look how all our independent variables influenced the difficulty index.
+\subsection{Number of views}
+One of the rationales of MCV is that more views on the same data, help with data exploration. As we have already seen, if MCV
+is applied correctly, cognitive overhead is reduced compared to the same application not using multiple views.
 Because comparison is a type of data exploration we can assume that more views also help increase user performance in tasks
-that involve comparison. We can derive:
+that involve comparison. We can assume:
 \begin{statements}
-    \item A higher number of views on the same data will reduce the DifficultyIndex.
+    \item A higher number of views on the same data will reduce the difficulty index.
 \end{statements}
+\subsection{Quality of views}
 The suitability of views change across different contexts. One context for example is what task is tried to be solved
 using the view. In our experiment, we used a total of four different task types, which are represented by the four question
 types. Half of the questions ask for comparison of numerical(\textit{attribute in space}) information and the other half
-asks for comparison of temporal(\textit{space in time}) information. Lohse et al. classify visual representations(views)
+asks for comparison of temporal(\textit{space in time}) information. Those two question types are also listed in Roth's taxonomy
+of interaction primitives as operand primitives \citep*{Roth.2013}. Lohse et al. classify visual representations(views)
 depending on the type of information conveyed. They classified 11 different view types and empircally derived likert
 scores(1-9) for every type of information \citep*{Lohse.1994}. Among other things they classified \textit{time charts} and 
-\textit{tables} when dealing with \textit{temporal} or \textit{numerical} information. We use these empircal likert scores
-to quantify the quality of the views used when answering a specific question. Since each interaction technique uses at least
-one table and one time chart and we cannot predict which view the user will use, we need to calculate the mean likert score
-of both views for a given question type. In the experiment the question types have a second dimension. Questions could
-either be of type \textit{identify} or \textit{measure}. In our mathematical model we do not distinguish between these
-two types because we lack research that would help quantify view quality in those regards. We can conclude with the
+\textit{tables} when dealing with \textit{temporal} or \textit{numerical} information. As the \textit{attribute in space} operand
+asks for \textit{numerical} information and the \textit{space in time} operand asks for \textit{temporal} information, we can 
+use these empircal likert scores to quantify the quality of the table and time chart used when answering a specific question.
+Since each interaction technique renders at least one table and one time chart and we cannot predict which view the user will use, we
+need to calculate the mean view quality of both views for a given question type. The likert scale ranges from 1 to 9, meaning if a
+visualization is rated 9, it conveys the information one hundred percent. In our calculation we devide the likert scores by 9 to account
+for this. The following equation uses the likert scores from the tables and the time charts visualizations:
+\begin{equation} \label{qualityViewEquation}
+    q_{view}= 
+    \begin{cases}
+        \frac{8.0 / 9 + 4.5 / 9}{2} \approx 0.69,& \text{if } question\_type == attribute\_in\_space \\
+        \frac{1.8 / 9 + 7.8 / 9}{2} \approx 0.53,& \text{if } question\_type == space\_in\_time 
+    \end{cases}
+\end{equation}
+In the experiment the question types have a second dimension. Questions could also either be of type \textit{identify} or \textit{measure}. In our mathematical model we do not distinguish between
+these two types because we lack research that would help quantify view quality in those regards. We can conclude with the
 following assumption:
 \begin{statements}[resume]
-    \item A higher combined encoding quality of the views in relation to the type of question will reduce the
-    DifficultyIndex
+    \item A higher encoding quality of the views regarding the type of question will reduce the difficulty index
 \end{statements}
+\subsection{Distraction index}
+Finally we look at the concept of distraction. Through personal observation we concluded that the key difference of our three interaction
+techniques can be found in the prevailing distraction. In all our questions we want to find specifc values of our spatio-temporal data. Therefore
+all other possible values on the dashboard interface can act as \textit{distractors}. Distractors have ranging distraction impact depending on
+their \textit{similarity} to the searched value. When a user starts the comparison process the effect of the different interaction techniques
+take place. We can count the number of distractors displayed that could theoretically be confused with the value that is looked for. We can
+multiple the distractors with a weigth that represents the impact of each individual distractor. Because all interaction techniques follow the principle
+of visually emphasizing the selected target states from the remaining states we have decided to distinguish between two cases. From now on we classify
+each distractor as either \textit{similar distractor} containing all distractors that look really similar to the target value or as
+\textit{background distractor} containing all distractors that look really different from the target value but still exist on the dashboard
+interface and could also be mistaken to be the target value. As we lack research for quantifing the weights of the different distractors, we
+decided that the similar distractors are twice as distracting as the background distractors. To compute the overall distraction all similar distractors
+and background distractors are counted and multiplied with their respective weight resulting in a value that has to be divided by two because a user
+will only use one of the two views (table view \&\ time chart view) simultaneously and both views encode the same information. This is the same principle
+described earlier for the view quality. The resulting value is called the \textit{distraction index}. The number of comparison targets also impact
+the distraction because now more values are similar distractors, resulting in a higher distraction index. This also supports our earlier presented finding
+of a higher number of comparison targets increasing the difficulty of the comparison process. The distraction index is further influenced from the question
+type, our third independent variable. Because \textit{measure} and \textit{space in time} both ask for multiple target values that are required to answer the
+question, the user has to search multiple times. In this case everything is counted the same only with reduced \textit{similar distractors}. We also account
+for the multiple searches the user has to perform by adding the not yet found target values in every search to the distraction index, getting less with every
+completed search.
+Finally, the number of views in connection with the question type also has an influence on the distraction index. Summarizing we can say that the additional
+views on the right side on the dashboard variants with the four views add similar distractors and background distractors depending on the question type.
+Questions with the question type \textit{measure} ask for differences between comparison targets and therefore the additional views on the right side also contain
+target values along with some \textit{similar distractors}. On the other hand questions that are of type \textit{identify} never ask for differences between
+comparison targets, which is why the additional views only add background distractors. We can compute the distraction each view generates using this formula:
+\begin{equation} \label{viewDistractionEquation}
+    View_{distraction} = \alpha * (N_{distractor\_similar} * \beta + N_{distracor\_background} * \gamma)
+\end{equation}
+\begin{conditions}
+    N_{distractor\_similar}     &  number of similar distractors \\
+    N_{distractor\_background}  &  number of background distractors \\   
+    \alpha                      &  coefficient of the distraction of a view \\
+    \beta                       &  multiplier for the similar distractors \\
+    \gamma                      &  multiplier for the background distractors \\
+\end{conditions}
+In the analysis we will set $\beta = 1$ and therefore $\gamma = 0.5$. The coefficient $\alpha$ will be manipulated in the analysis later. 
+We calculate the distraction each of the four possible views generates. We abbreviate the four views by their absolute position on the dashboard
+(UL = upper left, LL = lower left, UR = upper right, LR = lower right). Like on the view quality, we need to calculate the mean of the distraction scores
+of the table view and the time chart view, because one user will search and find the information in only one of the two views.The final formula for
+calculating the distraction index looks like this:
+\begin{equation} \label{distractionIndexEquation}
+    Index_{distraction} = \frac{UL_{distraction} + LL_{distraction} + UR_{distraction} + LR_{distraction}}{2}
+\end{equation} 
+Because the distraction index encapsulates the toal distraction the user experiences when answering a comparitive question on one of the dashboard variants,
+we can derive:
 \begin{statements}[resume]
-    \item A higher number of distractors will increase the DifficultyIndex. Distractors are elements in the user interface
-    that impede the user to find the answer
+    \item A higher distraction index will increase the difficulty index.
 \end{statements}
 
-$
-F_{difficulty} = \frac{1}{n_{views}} + \frac{n_{targets}}{1} + Difficulty_{question-type} + Difficulty_{interaction-technique}
-$
+\subsection{Difficulty index}
+
+The aggregation of all of our variables lead to following formula discribing the difficulty index:
+
+\begin{equation} \label{difficultyIndexEquation}
+    Index_{difficulty} = b_0 + \frac{b_1}{n_{view}} + \frac{b_2}{q_{view}} + b_3 * Index_{distraction}
+\end{equation}
+
+
+\section{Answer accuracy}
+As already explained the answer accuracy was measured binary and therefore multiple linear regression is not an option. Instead we will use the
+method of logistic regression to analyse the results. When thinking of factors that could influence the accuracy of an answer we made the
+following assumptions. Because answer time does not matter for the accuracy we concluded that no factor can impede the accuracy of the answer besides the
+distraction that is present on the dashboard. A user can mistakenly confuse the correct answer with all distractors present. We call this variable the
+discriminability. As with the answer time there are more unknown and unobserved variables that have an varying impact on the answer accuracy.
+We conclude:
+
+\begin{equation} \label{answerAccuracyEquation}
+    Answer_{accuracy} = a_0 + a_1 * Index_{discriminability} + a_2 * X_2 + \dots + a_n * X_n
+\end{equation}
+
+\begin{conditions}
+    Index_{discriminability}  & discriminability of the target value \\
+    a_0                       & intercept \\
+    a_1                       & coefficient of the discriminability index \\
+    X_2\dots X_n              & other factors that also influence the answer accuracy \\
+    a_2\dots a_n              & coefficients of other factors \\
+\end{conditions}
+
+\subsection{Discriminability index}
+The discriminability is basically the multiplicative inverse of the distraction index. When no distractor is present
+the user will always answer every question correctly. With a rising number of distractors the chance of mixing up the target values is increasing.
+Like before we have to account for different distraction qualities. Different distractors have different distraction qualities because of their visual appearance.
+It is the exact same observation that is covered with the distraction index. Because of this we will reuse it in the formular for the discriminability index:
+\begin{equation} \label{discriminabilityIndexEquation}
+    Index_{discriminability} = \frac{1}{1 + Index_{distraction}}
+\end{equation}

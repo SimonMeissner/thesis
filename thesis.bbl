@@ -106,6 +106,11 @@ Bradley {van Tonder} and Janet Wesson.
 \newblock Intellitilt: An enhanced tilt interaction technique for mobile map-based applications.
 \newblock In Pedro Campos, Nicholas Graham, Joaquim Jorge, Philippe Palanque, and Marco Winckler, editors, {\em Human-Computer Interaction -- INTERACT 2011}, volume 6947, pages 505--523. {Springer Berlin Heidelberg}, Berlin, Heidelberg, 2011.
 
+\bibitem{WangBaldonado.2000}
+Michelle~Q. {Wang Baldonado}, Allison Woodruff, and Allan Kuchinsky.
+\newblock Guidelines for using multiple views in information visualization.
+\newblock In Stefano Levialdi, Vito {Di Ges{\`u}}, and Laura Tarantino, editors, {\em AVI00: Proceedings of the working conference on Advanced visual interfaces}, pages 110--119, Palermo Italy, 2000. {Association for Computing Machinery, New York, United States}.
+
 \bibitem{Ward.}
 M.~O. Ward.
 \newblock Xmdvtool: integrating multiple methods for visualizing multivariate data.
