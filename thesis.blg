@@ -12,49 +12,53 @@ A level-1 auxiliary file: chapter/discussion.aux
 A level-1 auxiliary file: chapter/conclusion.aux
 The style file: plain.bst
 Database file #1: references.bib
+Warning--empty publisher in AhonenRainio.2005
 Warning--empty publisher in Keim.2005
+Warning--empty publisher in MichelaNardo.2005
+Warning--empty publisher in Roberts.2005
+Warning--empty journal in Trinchera.2008
 Warning--empty booktitle in Ward.
 Warning--empty publisher in Ward.
 Warning--empty year in Ward.
-You've used 25 entries,
+You've used 31 entries,
             2118 wiz_defined-function locations,
-            693 strings with 9203 characters,
-and the built_in function-call counts, 9462 in all, are:
-= -- 954
-> -- 413
-< -- 10
-+ -- 162
-- -- 130
-* -- 651
-:= -- 1516
-add.period$ -- 84
-call.type$ -- 25
-change.case$ -- 130
+            728 strings with 10294 characters,
+and the built_in function-call counts, 11906 in all, are:
+= -- 1192
+> -- 537
+< -- 12
++ -- 208
+- -- 170
+* -- 837
+:= -- 1907
+add.period$ -- 104
+call.type$ -- 31
+change.case$ -- 164
 chr.to.int$ -- 0
-cite$ -- 29
-duplicate$ -- 375
-empty$ -- 765
-format.name$ -- 130
-if$ -- 2032
+cite$ -- 39
+duplicate$ -- 468
+empty$ -- 952
+format.name$ -- 170
+if$ -- 2548
 int.to.chr$ -- 0
-int.to.str$ -- 25
-missing$ -- 22
-newline$ -- 129
-num.names$ -- 65
-pop$ -- 149
+int.to.str$ -- 31
+missing$ -- 29
+newline$ -- 159
+num.names$ -- 81
+pop$ -- 193
 preamble$ -- 1
-purify$ -- 106
+purify$ -- 135
 quote$ -- 0
-skip$ -- 272
+skip$ -- 336
 stack$ -- 0
-substring$ -- 653
-swap$ -- 104
-text.length$ -- 10
+substring$ -- 822
+swap$ -- 127
+text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 99
-warning$ -- 4
-while$ -- 106
-width$ -- 27
-write$ -- 284
-(There were 4 warnings)
+type$ -- 121
+warning$ -- 8
+while$ -- 132
+width$ -- 33
+write$ -- 347
+(There were 8 warnings)

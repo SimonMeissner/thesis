@@ -10,7 +10,8 @@ to gather enough observations because at least 10 different observations per ind
 models that deliver good results (quelle).
 \section{Aggregated Variables}
 Because our study used two nominal scaled variables and we want to analyse the results using linear regression we follow the process
-of builded aggregated variables. Those aggregated variables encode the different instances of the nominal scaled variables into
+of building aggregated variables. The concept of building composite indicatotors or variables when facing categorial data is widely used
+\citep*{MichelaNardo.2005, Lauro.2018}. Those aggregated variables encode the different instances of the nominal scaled variables into
 continuous variables, which in turn enables linear regression. This requires existing knowledge, preferably empirically proven.
 \section{Answer time}
 First we want to look at the user performance in terms of their answer time. Because we have so little data available and
@@ -40,9 +41,7 @@ that involve comparison. We can assume:
 \subsection{Quality of views}
 The suitability of views change across different contexts. One context for example is what task is tried to be solved
 using the view. In our experiment, we used a total of four different task types, which are represented by the four question
-types. Half of the questions ask for comparison of numerical(\textit{attribute in space}) information and the other half
-asks for comparison of temporal(\textit{space in time}) information. Those two question types are also listed in Roth's taxonomy
-of interaction primitives as operand primitives \citep*{Roth.2013}. Lohse et al. classify visual representations(views)
+types. Lohse et al. classify visual representations(views)
 depending on the type of information conveyed. They classified 11 different view types and empircally derived likert
 scores(1-9) for every type of information \citep*{Lohse.1994}. Among other things they classified \textit{time charts} and 
 \textit{tables} when dealing with \textit{temporal} or \textit{numerical} information. As the \textit{attribute in space} operand
@@ -59,9 +58,9 @@ for this. The following equation uses the likert scores from the tables and the 
         \frac{1.8 / 9 + 7.8 / 9}{2} \approx 0.53,& \text{if } question\_type == space\_in\_time 
     \end{cases}
 \end{equation}
-In the experiment the question types have a second dimension. Questions could also either be of type \textit{identify} or \textit{measure}. In our mathematical model we do not distinguish between
-these two types because we lack research that would help quantify view quality in those regards. We can conclude with the
-following assumption:
+Questions could also be of type \textit{identify} or \textit{measure}.
+In our mathematical model we do not make any assumptions about \textit{identify} or \text{measure} questions because we lack research that
+would help quantify view quality in those regards. We can conclude with the following assumption:
 \begin{statements}[resume]
     \item A higher encoding quality of the views regarding the type of question will reduce the difficulty index
 \end{statements}

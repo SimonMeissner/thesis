@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{AhonenRainio.2005}
+Paula Ahonen-Rainio and Kraak Menno-Jan.
+\newblock Chapter 32 - toward multi-variate visualization of metadata describing geographic information.
+\newblock In Jason Dykes, Menno-Jan Kraak, and Alan~M. MacEachren, editors, {\em Exploring Geovisualization}, pages 611--625. 2005.
+
 \bibitem{Andrienko.2003}
 Natalia Andrienko, Gennady Andrienko, and Peter Gatalsky.
 \newblock Exploratory spatio-temporal visualization: an analytical review.
@@ -34,6 +39,11 @@ Jeremy~W. Crampton.
 \newblock Interactivity types in geographic visualization.
 \newblock {\em Cartography and Geographic Information Science}, 29(2):85--89, 2002.
 
+\bibitem{Daszykowski.2007}
+M.~Daszykowski, K.~Kaczmarek, Y.~{Vander Heyden}, and B.~Walczak.
+\newblock Robust statistics in data analysis --- a review.
+\newblock {\em Chemometrics and Intelligent Laboratory Systems}, 85(2):203--219, 2007.
+
 \bibitem{gdz.bkg}
 Bundesamt für Kartographie~und Geodäsie.
 \newblock Bundesamt für kartographie und geodäsie.
@@ -60,6 +70,11 @@ Daniel~A. Keim.
 \newblock Chapter 2 - information visualization: Scope, techniques and opportunities for geovisualization.
 \newblock In Jason Dykes, Menno-Jan Kraak, and Alan~M. MacEachren, editors, {\em Exploring Geovisualization}, pages 21--52. 2005.
 
+\bibitem{Lauro.2018}
+Natale~Carlo Lauro, Maria~Gabriella Grassia, and Rosanna Cataldo.
+\newblock Model based composite indicators: New developments in partial least squares-path modeling for the building of different types of composite indicators.
+\newblock {\em Social Indicators Research}, 135(2):421--455, 2018.
+
 \bibitem{Lawrence.2006}
 Michael Lawrence, Eun~Kyung Lee, Dianne Cook, Heike Hofmann, and Eve~Syrkin Wurtele.
 \newblock explorase: Exploratory data analysis of systems biology data.
@@ -75,11 +90,21 @@ Gerald~L. Lohse, Kevin Biolsi, Neff Walker, and Henry~H. Rueter.
 \newblock A classification of visual representations.
 \newblock {\em Communications of the ACM}, 37(12):36--49, 1994.
 
+\bibitem{MichelaNardo.2005}
+{Michela Nardo}, {Michaela Saisana}, {Andrea Saltelli}, and {Stefano Tarantola}.
+\newblock {\em Tools for Composite Indicators Building}.
+\newblock 2005.
+
 \bibitem{North.1998}
 Chris North and B~Schneiderman.
 \newblock A taxonomy of multiple window coordination: Dept. technical report {\#}cs-tr-3854.
 \newblock \url{https://api.semanticscholar.org/CorpusID:17397701}, 1998.
 \newblock [Online; accessed 15-10-2023].
+
+\bibitem{Roberts.2005}
+Jonathan~C. Roberts.
+\newblock Chapter 8 - exploratory visualization with multiple linked views.
+\newblock In Jason Dykes, Menno-Jan Kraak, and Alan~M. MacEachren, editors, {\em Exploring Geovisualization}, pages 159--180. 2005.
 
 \bibitem{Roberts.2008}
 Jonathan~C. Roberts.
@@ -100,6 +125,11 @@ Robert~E. Roth.
 Alper Sarikaya, Michael Correll, Lyn Bartram, Melanie Tory, and Danyel Fisher.
 \newblock What do we talk about when we talk about dashboards?
 \newblock {\em IEEE transactions on visualization and computer graphics}, 2018.
+
+\bibitem{Trinchera.2008}
+L~Trinchera, {Carlo N}, and {G Russolillo}.
+\newblock Using categorical variables in pls path modeling to build system of composite indicators.
+\newblock 20(3-4):309--330, 2008.
 
 \bibitem{vanTonder.2011}
 Bradley {van Tonder} and Janet Wesson.

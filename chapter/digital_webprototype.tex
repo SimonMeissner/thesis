@@ -1,7 +1,7 @@
 \chapter{Digital Web-prototype}
 The prototype is created with the open source web development framework next.js, which offers react-based javascript- or
 typescript-based applications with server-side rendering and static website generation. It is mostly selected because of its
-developer-friendly ecosystem especially regarding deployement. Another reason for this stack is the existing experience
+developer-friendly ecosystem especially regarding deployment. Another reason for this stack is the existing experience
 with react-based typescript and the light-weight, modern setup. The whole application is using of a few react libraries.
 The most important beeing the popular "react-leaflet" library which drastically simplifies the use of leaflet maps in react
 applications. Other important libraries are: "zustand" to help with coordination, "recharts" to help building time lines and
@@ -99,7 +99,7 @@ the time line drawing on inital render and by changing the labels of the views w
 To further support the "Rule of consistency" we synchronize the "comparison control" and the "dataset control" across all six variants, to reduce
 the computational overhead from context switching.
 
-\section{Non-/Functionl requirements}
+\section{Non-/Functional requirements}
 This section describes all functional and non-functional requirements on the
 web-prototype. They are the result from the topics explained earlier in this chapter.
 
@@ -151,3 +151,15 @@ web-prototype. They are the result from the topics explained earlier in this cha
     \hline
     16 & \parbox{\linewidth}{\vspace{4pt}The app should use multi-coordinated views appropriately by paying attention to common guidelines to reduce cognitive overhead.} & Non-Functional\\
 \end{longtable}
+
+\section{Presentation \&\ Deployment}
+
+The code of the web-prototype can be found on github under the following link: \url{https://github.com/SimonMeissner/geo-dashboard}. A deployed
+version of the prototype can be accessed visiting: \url{https://geo-dashboard.vercel.app/}. In case the deployed version is no longer accessable
+in the future an video recording is also deposited on the github repository.
+
+\begin{figure}[ht]
+    \centering
+    \frame{\includegraphics[width=15.0cm]{images/prototype_screenshot.png}}
+    \caption{Screenshot of the deployed web-prototype. This shows dashbaord variant 6 with the \textit{highlighting\_2} interaction technique. The german states "Hessen", "Bayern" and "Berlin" selected for comparison.} \label{prototypeScreenshot}
+\end{figure}

@@ -3,11 +3,31 @@ In this chapter we want to summarize existing research with regard to our two in
 \textit{highlighting} and \textit{filtering}. First we will look at how the use of \textit{highlighting}
 and \textit{filtering} in the context of geodashboards is analysed. Second, we will also examine the
 interaction techniques in the context of multiple coordinated views because of its central role in our web-prototype.
-\section{Interaction technqiues \&\ Geo-dashboards}
+\section{Interaction techniques \&\ Geo-dashboards}
+
+
+Interaction techniques have been researched extensivly in the context of geo-dashboards.
+Lobo et al. researched different interaction technique for layer comparison in geo-visualizations \citep*{Lobo.2015}.
+VanTonder et al. investigated new tilting interaction techniques when performing typical tasks on mobile map-based applications \citep*{vanTonder.2011}.
+
+Ahonen-Rainio and Kraak argue that interactive techniques like highlighting (brushing) and filtering supports the user
+to interpret geovisualizations \citep*{AhonenRainio.2005}.
+Keim et al. state that an information visualization is constituted of three dimensions. The type of data that is visualized, the visualization technique used
+and the interaction technique used. Any combination of these three dimensions is conceivable. They sub categorize interaction techniques further into
+view enhancement methods, navigation techniques and selection techniques in which they list techniques for filtering and or highlighting. Further they state
+brushing (highlighting) to be one specifc interaction selction technique that is often combined with linking. Meaning the use of multiple views to display the
+data in multiple ways with the same features in each view visualy emphasized throw highlighting. They state that more subsequent geovisualizations incorporate the
+use of highlighting and linking \citep*{Keim.2005}. They also mention interactive filtering to be a combination of selection and view enhancement. When exploring large
+data sets it is important to interactivly select subsets of interest. Techiques that offer a more direct and interactive filtering a as the traditional querying are
+preferred more and more. \citep*{Keim.2005}. Ahonen-Rainio and Kraak argue that interactive techniques like highlighting (brushing) and filtering supports the user
+to interpret geovisualizations \citep*{AhonenRainio.2005}. Roberts states that users may want to directly manipulate query results in the visualization besides using button
+and sliders. Roberts also summarizes trends and present example applications that implement the idea of \textit{highlighting}
+in comination with linking multiple views but also states that the idea is still underused in geovisualizations \citep*{Roberts.2005}.
+
 
 see legends of the dashboard
 \section{Interaction techniques \&\ Multiple coordinated views}
-Multiple Coordinated Views  (in the following abbreviated with ’MCV’)  is a specific exploratory visualization technique that allow users to explore data.
+Multiple Coordinated Views (in the following abbreviated with ’MCV’) is a specific exploratory visualization technique that allow users to explore data.
 It consists of multiple views that all encode the same data in different representations. Interactions and
 operations of the user are managed and synchronised between views \citep*{Roberts.722007722007}. Buja et al. argue that
 beeing able to pose queries graphically and viewing the response in the same visual field is a fundamental component
@@ -24,10 +44,9 @@ when working with subsets \citep*{Carr.1987, Becker.1987}. On the other hand the
 another approach may be more suitable. They called it \textit{specify, then compute}.
 The idea is that a selection region is defined, similar to the highlighting procedure, then the subset
 is computed and finally a new display is rendered that only contains the subset. This describes our more
-modern idea of \textit{filtering}.
-
-Some contributions on interaction techniques in MCV systems define \textit{filtering} as a type of
-\textit{highlighting} (\textit{brushing}) \citep*{Ward.}.
+modern idea of \textit{filtering}. Some contributions on interaction techniques in MCV systems define \textit{filtering} as a type of
+\textit{highlighting} (\textit{brushing}) \citep*{Ward.}. Generally it seems our idea of \textit{filtering} is not much researched in the context
+of MCV or seen as similar to \textit{highlighting} techniques. 
 
 \section{Comparison}
 Gleicher writes about four considerations when visualizing comparison \citep*{Gleicher.2018}.
