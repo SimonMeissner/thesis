@@ -16,49 +16,50 @@ Warning--empty publisher in AhonenRainio.2005
 Warning--empty publisher in Keim.2005
 Warning--empty publisher in MichelaNardo.2005
 Warning--empty publisher in Roberts.2005
+Warning--there's a number but no volume in ThierryBadard.2009
 Warning--empty journal in Trinchera.2008
 Warning--empty booktitle in Ward.
 Warning--empty publisher in Ward.
 Warning--empty year in Ward.
-You've used 31 entries,
+You've used 37 entries,
             2118 wiz_defined-function locations,
-            728 strings with 10294 characters,
-and the built_in function-call counts, 11906 in all, are:
-= -- 1192
-> -- 537
+            769 strings with 11451 characters,
+and the built_in function-call counts, 13757 in all, are:
+= -- 1367
+> -- 638
 < -- 12
-+ -- 208
-- -- 170
-* -- 837
-:= -- 1907
-add.period$ -- 104
-call.type$ -- 31
-change.case$ -- 164
++ -- 248
+- -- 204
+* -- 973
+:= -- 2233
+add.period$ -- 122
+call.type$ -- 37
+change.case$ -- 197
 chr.to.int$ -- 0
-cite$ -- 39
-duplicate$ -- 468
-empty$ -- 952
-format.name$ -- 170
-if$ -- 2548
+cite$ -- 46
+duplicate$ -- 535
+empty$ -- 1090
+format.name$ -- 204
+if$ -- 2920
 int.to.chr$ -- 0
-int.to.str$ -- 31
-missing$ -- 29
-newline$ -- 159
-num.names$ -- 81
-pop$ -- 193
+int.to.str$ -- 37
+missing$ -- 37
+newline$ -- 189
+num.names$ -- 93
+pop$ -- 227
 preamble$ -- 1
-purify$ -- 135
+purify$ -- 164
 quote$ -- 0
-skip$ -- 336
+skip$ -- 376
 stack$ -- 0
-substring$ -- 822
-swap$ -- 127
+substring$ -- 911
+swap$ -- 133
 text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 121
-warning$ -- 8
-while$ -- 132
-width$ -- 33
-write$ -- 347
-(There were 8 warnings)
+type$ -- 141
+warning$ -- 9
+while$ -- 149
+width$ -- 39
+write$ -- 413
+(There were 9 warnings)

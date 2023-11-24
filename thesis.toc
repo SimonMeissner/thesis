@@ -2,8 +2,7 @@
 \contentsline {chapter}{\numberline {2}Related Work}{4}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Interaction techniques \&\ Geo-dashboards}{4}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Interaction techniques \&\ Multiple coordinated views}{5}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Comparison}{6}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Digital Web-prototype}{7}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Digital web prototype}{7}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Data}{7}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Interaction techniques}{8}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Layout \&\ Function}{8}{section.3.3}%
@@ -24,7 +23,7 @@
 \contentsline {subsection}{\numberline {5.2.3}Distraction index}{22}{subsection.5.2.3}%
 \contentsline {subsection}{\numberline {5.2.4}Difficulty index}{24}{subsection.5.2.4}%
 \contentsline {section}{\numberline {5.3}Answer accuracy}{24}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Discriminability index}{24}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.1}Discriminability index}{25}{subsection.5.3.1}%
 \contentsline {chapter}{\numberline {6}Evaluation}{26}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Answer time analysis}{26}{section.6.1}%
 \contentsline {subsection}{\numberline {6.1.1}Manipulating the view difficulty}{27}{subsection.6.1.1}%
@@ -33,14 +32,12 @@
 \contentsline {subsection}{\numberline {6.1.4}Grouping the observations}{30}{subsection.6.1.4}%
 \contentsline {subsection}{\numberline {6.1.5}Quality of view}{30}{subsection.6.1.5}%
 \contentsline {section}{\numberline {6.2}Answer accuracy analysis}{31}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Manipulating the discriminability index}{31}{subsection.6.2.1}%
 \contentsline {section}{\numberline {6.3}Analysis of study variables}{31}{section.6.3}%
 \contentsline {section}{\numberline {6.4}Subjective user feedback}{32}{section.6.4}%
 \contentsline {chapter}{\numberline {7}Discussion}{34}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Finding mathematical models}{34}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Quality of view}{35}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Analysis of study variables}{35}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Limitations}{37}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Further research}{38}{section.7.5}%
+\contentsline {section}{\numberline {7.1}Modelling user performance in mathematical models}{34}{section.7.1}%
+\contentsline {section}{\numberline {7.2}User performance depending on interaction technique}{35}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Additional results}{36}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Limitations \&\ further research}{37}{section.7.4}%
 \contentsline {chapter}{\numberline {8}Conclusion}{40}{chapter.8}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -2,7 +2,7 @@
 
 \section{Goal}
 The goal of the study was to collect data that in turn would help us find mathematical models that approximate user performance best. In our
-definition user performance is two-folded: time the user needed to give an answer (in the following abbreviated with \textit{answer time}) and the
+definition user performance is two-folded: the time the user needed to answer (in the following abbreviated with \textit{answer time}) and the
 accuracy of that answer. The accuracy (in the following abbreviated with \textit{answer accuracy}) is measured binary, meaning an answer could
 be true or false. We hope to learn something about the impact interaction techniques have on these two parameters. The findings refer to the scope
 of comparing features in geo-dashboards. Ideally we find differences between our three interaction techniques \textit{filtering}, \textit{highlighting\_1}
@@ -10,19 +10,19 @@ and \textit{highlighting\_2}.
 
 \section{Variables}
 We wanted to include several independent variables to get a rough idea of which factors would affect user performance when the goal
-is comparison of features in geo-dashboards. We also included multiple independent variables because we wanted to make sure that we gather
-enough observations and because of a reason explained in chapter 5.
+is the comparison of features in geo-dashboards. We also included multiple independent variables because we wanted to make sure that we gathered
+enough observations and because of a reason explained in Chapter 5.
 We included the number of views the dashboard renders, the number of spatial entities that are compared simultaneously,
 the interaction technique the dashboard used and the type of comparison question that was asked. We will abbreviate spatial
 entities that are compared as \textit{comparison targets} and the type of comparison question as \textit{question type}. As already
-explained half of the dashboard variants had the ability to render two additional views that encode differences of the selected spatial entities.
-The number of comparison targets a comparitive question could be asked about was two or three. Gleicher states that the number of comparison targets
-directly influences the difficulty of the comparison \citep*{Gleicher.2018}. The question type describes the kind of comparitive question
-that was asked. We used a total of four different question types. Half of the questions ask for comparison of numerical(\textit{attribute in space})
-information and the other half asks for comparison of temporal(\textit{space in time}) information. Those two question types are also listed
-in Roth's taxonomy of interaction primitives as operand primitives \citep*{Roth.2013}. In the experiment the question types had a second dimension.
+explained half of the dashboard variants could render two additional views that encode differences of the selected spatial entities.
+The number of comparison targets a comparative question could be asked about was two or three. Gleicher states that the number of comparison targets
+directly influences the difficulty of the comparison \citep*{Gleicher.2018}. The question type describes the kind of comparative question
+that was asked. We used a total of four different question types. Half of the questions ask for the comparison of numerical(\textit{attribute in space})
+information and the other half asks for the comparison of temporal(\textit{space in time}) information. Those two question types are also listed
+in Roth's taxonomy of interaction primitives as operand primitives \citep*{Roth.2013}. In the experiment, the question types had a second dimension.
 Questions could also either be of type \textit{identify} or \textit{measure}. In the context of our study \textit{measure} meant the question was asking
-about differences of two comparison targets. The term \textit{identify} was used to describe questions that look for a specific value of one
+about differences between two comparison targets. The term \textit{identify} was used to describe questions that look for a specific value of one
 comparison target that was already present in the dataset and was not aggregated. Table \ref{questionTypesTable} displays all four question types and
 the corresponding questions that were used.
 As indicated already our dependent variables are answer time and answer accuracy.
@@ -52,35 +52,33 @@ As indicated already our dependent variables are answer time and answer accuracy
 \end{longtable}
 
 \section{Participants}
-The study involved twelve participants. All were between 20 and 29 years old. It included eleven male and one female participant. Nine
-participant stated to have no experience in the usage of geo-dashboard. Two reported to use geo-dashboards at least once a year. And one particpant
+The study involved 12 participants. All were between 20 and 29 years old. It included 11 male and one female participant. Nine
+participants stated to had no experience in the usage of geo-dashboard. Two reported to use geo-dashboards at least once a year. One participant
 stated to use geo-dashboards at least once every three months. Because the study was conducted in german all participants had to able to speak
 and understand german.
 
 \section{Design}
-The study followed a within-group design as each participant answered questions with all instances of every independent variable. With
-exception of the interaction technique where every particpant was exposed to only two of the three possiblities. Every participant had to
+The study followed a within-group design as each participant answered questions with all instances of every independent variable. Except for the interaction technique where every participant was exposed to only two of the three possibilities. Every participant had to
 answer half of the questions about two and the other half about three spatial entities. Every participant also had to answer half of the
-questions using 2 and the other half using 4 views. As the influence of the interaction technique was of highest interest, followed by
-the number of views and number of statial entities counterbalancing these factors was of highest priority. By limiting the count of
-participants to twelve we balanced all possible combinations of two interaction techniques across all study sessions (taking order into
-account). Every possible combination was used two times. To balance number of spatial entities, half of the participants answered the
+questions using two and the other half using four views. As the influence of the interaction technique was of the highest interest, followed by
+the number of views and the number of spatial entities counterbalancing these factors was of the highest priority. By limiting the count of
+participants to 12 we balanced all possible combinations of two interaction techniques across all study sessions (taking order into
+account). Every possible combination was used two times. To balance the number of spatial entities, half of the participants answered the
 questions about two entities first and half of the participants answered the ones about three entities first. The number of views was
-treated similar but it was taken care of this balancing to be also balanced across all study sessions. Only the question type was not
-completly balanced as it would have requirement far more participants. Because the question type was more of a tool to observe the effect of
-the other variables this is not detrimental to the results. Every participant answered the same eight questions using all for questions types
-but using different orders. To reduce learning effects from the data we controlled the knowledge about it
-by changing the dataset after every question. Because of the dataset exchange we needed to control the datasets. All had the same
-structure and recorded qualitative changes of one numerical variable in the 16 states of germany between the years 2008 and 2022.
+treated similarly but it was taken care of this balancing to be also balanced across all study sessions. Only the question type was not
+completely balanced as it would have required far more participants. Because the question type was more of a tool to observe the effect of
+the other variables this is not detrimental to the results. Every participant answered the same eight questions using all four question types. To reduce learning effects from the data we controlled the knowledge about it
+by changing the dataset after every question. Because of the dataset exchange, we needed to control the datasets. All had the same
+structure and recorded qualitative changes of one numerical variable in the 16 states of Germany between the years 2008 and 2022.
 \section{Procedure \&\ Apparatus}
-The study was designed to be held online. The participant and the study coordinator met inside an online video conference. Before the session,
-the participant had to sign the consent form. The experiment required between 20 and 30 minutes of time. Before the experiment began, the
-study coordinator provided two links and a video recording. The video recording was a standardized of informing the participant about whats
-going to follow and included information about the prototype and how to use it. The first link led to the web-prototype and the second
+The study was designed to be held online. The participant and the study coordinator met in an online video conference. Before the session,
+the participant had to sign the consent form. The experiment required between 20 and 30 minutes. Before the experiment began, the
+study coordinator provided two links and a video recording. The video recording was a standardized of informing the participant about what was
+going to follow and included information about the prototype and how to use it. The first link led to the web prototype and the second
 provided the online questionnaire used to propose the questions and track the answers and the answer times. If the participant had no further
-questions the particpant was asked to start with the first questions in the questionnaire. The first questions asked about some general
-information. After that the main part of the experiment began where the participant had to answer eight questions in succession. Table
-\ref{questionsTable} lists all questions, the corresponding types and the number of comparison targets.
+questions the participant was asked to start with the first questions in the questionnaire. The first questions asked about some general
+information. Following the main part of the experiment began where the participant had to answer eight questions in succession. Table
+\ref{questionsTable} lists all questions, the corresponding types, and the number of comparison targets.
 \begin{longtable}{| p{0.20\linewidth} | p{0.20\linewidth} | p{0.50\linewidth}|}
     \hline
     \textbf{Question type} & \textbf{N targets} & \textbf{Question} \\
@@ -112,21 +110,21 @@ information. After that the main part of the experiment began where the particip
     \hline
     type4 & 3 & \parbox{\linewidth}{\vspace{4pt} Vergleiche Sachsen-Anhalt, Niedersachsen und Thüringen. Es geht um den Anteil landwirtschaftlich genutzter Fläche. Ziel dieser Frage ist es, aus allen drei möglichen Paaren (Sachsen-Anhalt/Niedersachsen, Sachsen-Anhalt/Thüringen, Niedersachsen/Thüringen) die Differenzen im Jahr 2010 (D1) und 2011 (D2) zu bilden. Berechne pro Paar die Differenz (D1 - D2) und finde von allen drei Differenzen das Maximum. [Bitte schreibe dein gefundenes Maximum und die Namen der Bundesländer des Paares auf]} \\
 \end{longtable}
-It was not communicated that answering quickly and right was of relevance. After each question the dashboard variant and the dataset had to
+It was not communicated that answering quickly and right was of relevance. After each question, the dashboard variant and the dataset had to
 be switched. This information was described and visually highlighted at the beginning of each question in the online questionnaire. After the
-main part of the experiment the particpant had to answer three more questions about subjective feedback regarding the two dashboard variants
+main part of the experiment, the participant had to answer three more questions about subjective feedback regarding the two dashboard variants
 he/she used:
 \begin{enumerate}
     \item What and why did you like and dislike about the first dashboard variant?
     \item What and why did you like and dislike about the second dashboard variant?
     \item If you had to choose, which of the two dashboard variants would you prefer? Why would you prefer it?
 \end{enumerate}
-After that the experiment session was closed by given the particpant the opportunity to ask questions. Before the start of the experiment the 
-participant was asked to close any disturbing software and share their screen. The particpant also had to make sure to be in an 
-undisturbing environment. The particpant had to use a terminal device with a screen size of at least 1280x720px. If one of these requirements
-was not met or the particpant was interrupted during the experiment the session was terminated and the results were not considered in the
-analysis. Before the study started two pilot session were held to validate and tweak the procedure.
+After that, the experiment session was closed by allowing the participant to ask questions. Before the start of the experiment, the 
+participant was asked to close any disturbing software and share their screen. The participant also had to make sure to be in an 
+undisturbing environment. The participant had to use a terminal device with a screen size of at least 1280x720px. If one of these requirements
+was not met or the participant was interrupted during the experiment the session was terminated and the results were not considered in the
+analysis. Before the study started, two pilot sessions were held to validate and tweak the procedure.
 
-The online questionnaire tool 'limeSurvey' was used to ask the questions and track the answers and answer times. After every experiment session
-the study coordinator had to rearange the questions and edit the hints about the dashboard variant and dataset to use. To have a chance of
-restoring answer times, answer accuracy and subjective feedback in case of losses each experiment session was audio and video recorded.
+The online questionnaire tool 'LimeSurvey' was used to ask the questions and track the answers and answer times. After every experiment session,
+the study coordinator had to rearrange the questions and edit the hints about the dashboard variant and dataset to use. To have a chance of
+restoring answer times, answer accuracy, and subjective feedback in case of losses each experiment session was audio and video recorded.

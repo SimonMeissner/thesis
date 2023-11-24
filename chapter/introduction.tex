@@ -1,99 +1,81 @@
 \chapter{Introduction}
-The growing usage of dashboards to represent data across a range of different 
-fields suggests a need for research on layout and design features of dashboards 
-and their influence on the user experience. Previous research has shown that there is
-no one-fits-all solution for the design of dashboards \citep*{Yigitbasioglu.2012,Sarikaya.2018}.
+The increasing use of dashboards to display data in various fields emphasizes the need for research on the layout
+and design characteristics of dashboards and their impact on the user experience. Prior research has demonstrated
+that there is no one-size-fits-all approach to dashboard design. \citep*{Yigitbasioglu.2012,Sarikaya.2018}.
 
-This existing agreement that general design recommendations for dashboards are not sufficient
-and/or possible ask for a breakdown of components that constitute dashboards. One approach is
-to identify user interactions that are possible when visualized data is explored or analysed.
-The field of geovisualizations and geodashboards is enriched with many different perspectives that
-all try to define taxonomies and or classifications models for possible user interactions
-\citep*{Andrienko.2003,Crampton.2002}. Many have their reasonable own application for
-spatial-temporal information visualization. But the minority of these classifications and
-taxonomies are empirically-derived. The proposed framework of Roth represents an exception.
-He has shown that a functional taxonomy of interaction primitives can be empirically derived.
-He identified general tasks users want to accomplish (objective primitives) \citep{Roth.2013}.
-Besides narrowing down the scope to one of Roths derived objective primitives this work will also
-look at this topic from the perspective of different interaction techniques.
+This existing agreement that general design recommendations for dashboards are not sufficient asks for a breakdown
+of components that constitute dashboards. One approach is to identify possible user interactions when visualized
+data is explored or analyzed. The field of geovisualizations and geo-dashboards is enriched with many different
+perspectives that all try to define taxonomies or classification models for possible user interactions
+\citep*{Andrienko.2003,Crampton.2002}. Many have their reasonable application for spatial-temporal information visualization.
+However, a minority of these classifications and taxonomies are empirically derived. The proposed framework of Roth represents
+an exception. He has shown that a functional taxonomy of interaction primitives can be empirically derived. He identified
+general tasks users want to accomplish (objective primitives) \citep{Roth.2013}. Besides narrowing down the scope to one of
+Roth's derived objective primitives, this work will also look at this topic from the perspective of different interaction
+techniques.
 
-An interaction technique as broadly defined in the Computer Science Handbook from 2004
-is "the fusion of input and output, consisting of all hardware and software elements, 
-that provides a way for the user to accomplish a task." \citep*{Hinckley.2004}. Input describes
-all sensed information about the physical environment to the computer. Output from computers on the
-other hand include any emission or modification to the physical environment. In the
-context of geovisualizations and geodashboards, interaction techniques have been
-researched \citep*{Keim.2005,Lobo.2015,vanTonder.2011}.
-Roth also describes an interaction technique in the context of geovisualizations as the
-functionality of an given interface and the procedures of manipulating its
-visualizations \citep{Roth.2013}.
+An interaction technique, as broadly defined in the Computer Science Handbook from the year 2004 is "the fusion of input and
+output, consisting of all hardware and software elements, that provides a way for the user to accomplish a task."
+\citep*{Hinckley.2004}. Input describes all sensed information about the physical environment to the computer. Output from
+computers on the other hand includes any emission or modification to the physical environment. Andrienko et al. state that
+interactive visualizations implement tools that support interaction with the display and the information they represent through
+the use of common interaction techniques \citep*{Andrienko.2020}. In the context of geovisualizations and geo-dashboards,
+interaction techniques have been researched \citep*{Keim.2005,Lobo.2015,vanTonder.2011}.
+Roth also describes an interaction technique in the context of geovisualizations as the functionality of a given interface and
+the procedures of manipulating its visualizations \citep{Roth.2013}.
 
-This work will deal with the derived objective primitive of \textit{comparison} from Roth's work.
-But not only Roth writes about comparison. Wehrend describes \textit{compare} as a seperate
-operation class in visualization problem \citep{Wehrend.1990} and Brehmer et al.
-speak of comparison as a low level visualization task \citep*{Brehmer.2013}. Also Buja et al. propose
-\textit{comparison} to be one of the three fundamental plot manipulations in data visualization \citep*{Buja.1996}. In the
-scope of geovisualizations Crampton identified \textit{compare} as an interactivity task
-\citep{Crampton.2002} and Gorte and Degbelo argue that \textit{comparison} is a basic
-task that is relevant in exploratoy and confirmatory analysis \citep{Gorte.2022}.
-Buja distingiushes between two dimensions of comparison. The first
-describes the goal of comparing different variables or projections of the whoel dataset.
-The second describes the goal of comparing subsets of the whole dataset against each
-other \citep*{Buja.1996}. This work will only focus on the latter. 
+This work will deal with the derived objective primitive of \textit{comparison} from Roth's work. But not only Roth writes about comparison.
+Wehrend describes \textit{compare} as a separate operation class in visualization problems \citep{Wehrend.1990} and Brehmer et al. speak
+of comparison as a low-level visualization task \citep*{Brehmer.2013}. Also, Buja et al. propose \textit{comparison} to be one of the three
+fundamental plot manipulations in data visualization \citep*{Buja.1996}. In the scope of geovisualizations, Crampton identified \textit{compare}
+as an interactivity task \citep{Crampton.2002} and Gorte and Degbelo argue that \textit{comparison} is a basic task that is relevant in
+exploratory and confirmatory analysis \citep{Gorte.2022}. Buja distinguishes between two dimensions of comparison. The first describes the
+goal of comparing different variables or projections of the entire dataset. The second dimension describes the goal of comparing subsets
+of the whole dataset against each other \citep*{Buja.1996}. This work will only focus on the latter.
 
-We will examine two broadly used interaction techniques: \textit{filtering} and
-\textit{highlighting} \citep*{Keim.2005,Roth.2013}. Keim et al. describe \textit{filtering} as a
-combination of selection and view enhancement and Roth attributes filtering to identifying matches
-from user-defined conditions. The literature often use the term \textit{brushing} 
-to describe \textit{highlighting}. They can be considered synonymous in the scope of interaction techniques
-as both describe the process of visualy emphasizing a subset from the whole dataset.
-Historically to define the subset the process started by drawing a rectangle directly in the view with the
-mouse which was called \textit{brush}. Which explains the term \textit{brushing}.
-For the rest of this work we will use the term \textit{highlighting}. Keim et al. state
-that \textit{highlighting} is often combined with linking which describes the process of selected data
-beeing communicated to other views of the data. They follow one of the proposed user strategies
-\textit{Select Subset} from Gleicher \citep*{Gleicher.2018}.
+We will examine two broadly used interaction techniques: \textit{filtering} and \textit{highlighting} \citep*{Keim.2005,Roth.2013}.
+To deal with scalability challenges when visualizing comparison one strategy is to utilize \textit{Select Subset} from Gleicher
+\citep*{Gleicher.2018}. Both techniques address this challenge by visually emphasizing or reducing the data. Keim et al. describe
+\textit{filtering} as a combination of selection and view enhancement and Roth attributes filtering as the ability to identify
+matches from user-defined conditions. The literature often uses the term \textit{brushing} to describe \textit{highlighting}. They
+can be considered to have a synonymous meaning in the scope of interaction techniques as both describe the process of visually
+emphasizing a subset from the whole dataset. Historically the process to define the subset started by drawing a rectangle directly
+in the view with the mouse which was called the \textit{brush}. Which explains the term \textit{brushing}. For the rest of this work,
+we will use the term \textit{highlighting}. \textit{Highlighting} is often combined with \textit{linking} which describes the process
+of selected data being communicated to other views of the data \citep*{Keim.2005,Andrienko.2020}.
 
-In this work we will investigate how these interaction techniques influence user performance
-in the context of comparing subsets in geodashboards. Because the interaction technique is
-by far not the only variable that can be changed, we also want to observe the influence of
-different variables on the user performance. To provide a starting point backed with emperical
-data we want to derive a mathematical model that should display user performance in dependence
-from different variables which are described later. Therefore we can infer two research
+In this work, we will investigate how these interaction techniques influence user performance in the context of comparing subsets in
+geo-dashboards. Since the interaction technique is by far not the only variable that can be changed, we want to observe the influence
+of different variables on user performance. To provide a starting point backed with empirical data we want to derive a mathematical model
+that should display user performance in dependence on different variables which are described later. Therefore we can infer two research
 questions for this work:
 \begin{enumerate}
     \item Which mathematical models best describe user performance during the comparison of spatial entities
-    in the context of geodashboards?
+    in the context of geo-dashboards?
     \item Which interaction technique best supports the task of comparison in the context of
-    geodashboards? 
+    geo-dashboards? 
 \end{enumerate}
 
-To answer these questions we conducted a user study in which participants try to answer
-questions with the goal of finding differences and/or similarities of subsets
-of spatial-/temporal datasets. To answer the
-questions they are using a specially builded digital web-prototype with six different dashboard
-variants. The dashboards vary in their interaction technique and some render additional views
-utilizing \textit{explicit encoding} as it is defined as one of the basic designs for visual
-comparison \citep*{Gleicher.2018}. The goal of the experiment is to collect data about the user
-performance. We have defined user performance to be two dimensional. First want to know about the time it takes to answer questions. It is
-important to note that it does not matter wether a correct answer was given. The second dimension is about accuracy. This seperatly tracks
-wether an answer was correct or not. After collecting the data we want to use that data to derive mathematical
+To answer these questions we conducted a user study in which participants try to answer questions to find differences and/or similarities
+of subsets of spatial-/temporal datasets. To answer the questions they are using a specially built digital web prototype with six different
+dashboard variants. The dashboards vary in their interaction technique and some render additional views utilizing \textit{explicit encoding}
+as it is defined as one of the basic designs for visual comparison \citep*{Gleicher.2018}. The goal of the experiment is to collect data
+about the user performance. We have defined user performance to be two-dimensional. First want to know about the time it takes to answer
+questions. It is important to note that it does not matter whether a correct answer was given. The second dimension is about accuracy. This
+separately tracks whether an answer is correct or not. After collecting the data we want to use that data to derive mathematical
 models that best approximate answer time and accuracy during the comparison of features in
-geodashboards. With special interest for the differences between the selected interaction
+geo-dashboards. With special interest in the differences between the selected interaction
 techniques. We want to learn about the different factors we have included and how they
 influence answer time and accuracy in this setting.
 
-To get an overview of the current state of research, chapter 2 will provide information
-about scientific contributions on interaction techniques in geo-dashboards and comparison.
-We will also give an short introduction to multiple coordinated because we are utilizing
-such a system in our prototype. Section 3 will describe key concepts of the mathematical models and
-what constitues them. In Section 4 details about the digital web-prototype and how it was built are presented.
-How the experiment was designed and what factors that possibly influence comparison performance were considered
-are covered in section 5. Section 6 will present the results of the experiment and propose our found
-mathematical models that showed the best testing results.
-As this experiment only covers a selection of possible factors that possible influence difficulty and
-accuracy during the comparison of features in geodashboards, this work should be a starting point for
-further research. Because comparison can be of many different kinds and cover different scopes this work
-also opens the door for more reseach in different comparison settings. Section 7 discusses such limitations
-in depth, how our research questions can be answered and how our findings can be transferred to other domains.
-Lastly we will sumarize our key-learnings and propose future work that has to be done in section 8.
+Chapter 2 will provide an overview of the current state of research on the role of interaction techniques in the context of geo-dashboards
+and the context of multiple coordinated views. The concept of multiple coordinated views will be utilized in the development of our web
+prototype, which will be discussed in detail in Section 3. Section 4 will cover how the experiment was designed and what factors were
+considered when determining user performance in comparison tasks. In Section 5, we will document the process of deriving our mathematical
+models. Section 6 will present the results of the experiment and propose any mathematical models found. It's worth noting that this work is
+exploratory in nature, so the in-depth analysis will depend on the general findings and be adapted accordingly. As this experiment only
+covers a selection of possible factors that influence answer time and accuracy during the comparison of features in geo-dashboards, it should
+be considered a starting point for further research. Because comparison can be of many different kinds and cover different scopes this work
+also opens the door for more research in different comparison settings \citep*{Gleicher.2018}. Section 7 discusses such limitations in depth,
+how our research questions can be answered, how the findings relate to work that was already done, and how sensible directions for future
+work could look like. Lastly, we will summarize this work with a special focus on our key learnings in section 8.

@@ -1,56 +1,58 @@
-\chapter{Digital Web-prototype}
-The prototype is created with the open source web development framework next.js, which offers react-based javascript- or
+\chapter{Digital web prototype}
+The prototype is created with the open-source web development framework next.js, which offers react-based javascript- or
 typescript-based applications with server-side rendering and static website generation. It is mostly selected because of its
-developer-friendly ecosystem especially regarding deployment. Another reason for this stack is the existing experience
-with react-based typescript and the light-weight, modern setup. The whole application is using of a few react libraries.
-The most important beeing the popular "react-leaflet" library which drastically simplifies the use of leaflet maps in react
-applications. Other important libraries are: "zustand" to help with coordination, "recharts" to help building time lines and
+developer-friendly ecosystem, especially regarding deployment. Another reason for this stack is the existing experience
+with react-based typescript and the lightweight, modern setup. The whole application is using of a few react libraries.
+The most important being the popular "react-leaflet" library which drastically simplifies the use of leaflet maps in react
+applications. Other important libraries are: "zustand" to help with coordination, "recharts" to help build timelines, and
 "tailwindcss" to simplify the design process of the application. Because the experiment is designed to be held online the
-application needs to be deployed. For that we use the free deployment plan of vercel.com. Because the application is only
+application needs to be deployed. For that, we use the free deployment plan of vercel.com. Because the application is only
 using non-personal static data there is no need for implementing a backend or an authentication system. Although the prototype
-takes responsive behaviour into account the screen dimension of the user's device should not fall below 1280x720px. 
+takes responsive behavior into account the screen dimension of the user's device should not fall below 1280x720px. 
 \section{Data}
-The data used in the web-prototype consists of two components. First we implement geodata of the states of germany. In terms of
-performance, low-resolution geojson data with a reference scale of 1:5000000 is used. We utilize the open-source data
-from the german federal agency for cartography and geodesy \citep*{gdz.bkg}. The questions in the study are about static
-spatio-temporal datasets focusing on changes of thematic properties expressed through values of attributes. Meaning
-qualitative changes with numeric characteristics. According to Andrienko et al. this is one of three types of spatio-temporal
-data \citep*{Andrienko.2003}. On the other hand spatio-temporal datasets can have existential changes, features appear and
+The data used in the web prototype consists of two components. First, we implement georeferenced data of the states of Germany. In terms of
+performance, low-resolution geojson data with a reference scale of 1:5000000 is used. We utilize open-source data
+from the German Federal Agency for cartography and geodesy \citep*{gdz.bkg}. The questions in the study are about static
+spatio-temporal datasets focusing on changes in thematic properties expressed through values of attributes. Meaning
+qualitative changes with numeric characteristics. According to Andrienko et al., this is one of three types of spatio-temporal
+data \citep*{Andrienko.2003}. On the other hand, spatio-temporal datasets can have existential changes, features appear and
 disappear over time, or they can have changes in their spatial properties. Because we want to minimize learning effects
 when using the data and because every participant is going to answer eight questions, we implement four different
 datasets. The dataset is switched after every question using the "dataset control" which will be explained later. All four datasets
-have the exact same structure. They are about qualitative numeric changes of one marker of all 16 states of germany and covered
+have the same structure. They are about qualitative numeric changes of one marker of all 16 states of Germany and cover
 the years from 2008 to 2022.
 \section{Interaction techniques}
-In addition to the methods already presented: \textit{filtering} and \textit{highlighting}, we decide to investigate a third
-method. It is a modification of the highlighting method. When features are selected for comparison, they are visually highlighted using
-\textit{different} colors. In classic highlighting, all selected features are highlighted in the \textit{same} color. For the rest of
-this work we will distinguish highlighting using the same color and highlighting using different colors by naming the first
-\textit{highlighting\_1} and the second \textit{highlighting\_2}.
+In addition to the methods already presented: \textit{filtering} and \textit{highlighting}, we decided to investigate a third
+method. It is a modification of the highlighting method and is described by Andrienko et al., among others. When multiple subsets are selected for
+comparison, they are visually highlighted using \textit{different} colors to indicate several subsets \citep*{Andrienko.2020}. In classic highlighting, all selected
+subsets are highlighted in the \textit{same} color even if they represent different subsets. For the rest of this work, we will distinguish
+highlighting using the same color and highlighting using different colors by naming the first \textit{highlighting\_1} and the second \textit{highlighting\_2}.
 
 \section{Layout \&\ Function}
 In addition to the static data, the entire application consists of a simple frontend that serves six different non-scrollable
-geodashboard variants. Always two of the six variants implement the same interaction technique. Variant 1 \&\ 4 use
+geo-dashboard variants. Always two of the six variants implement the same interaction technique. Variant 1 \&\ 4 use
 \textit{filtering}, variant 2 \&\ 5 use \textit{highlighting\_1} and variant 3 \&\ 6 use \textit{highlighting\_2}
 (see Table \ref{dashboard_variant_table}). When accessing the prototype the first variant is rendered. The other variants are
-reachable over a tab-based navigationbar at the top of the screen. A seventh tab is implemented to learn about the application
+reachable over a tab-based navigation bar at the top of the screen. A seventh tab is implemented to learn about the application
 and its purpose. Each variant is covered with an openstreet map that is centered on Germany stretching over the whole page. All
 states of Germany are rendered using the borders as polygon representations. Every polygon used the same
 blue fill color. All other elements in the dashboards are placed on top of this map. On every variant, two additional views
 are also rendered on top of each other, taking up the left third of the screen. The time chart in the top-left corner of the
-screen visualizes the spatial temporal data by rendering 16 lines, each representing one of the 16 states of germany. The
-bottom-left view visualizes a two-dimensional table connecting each state with each year containing a numerical value. The
-"dataset control" and another button, which will be termed "comparison control" are positioned in the middle third of the
-screen close to the navigationbar at the top. The comparison control offers the ability to select two or three of the 16
+screen visualizes the spatial temporal data by rendering 16 lines, each representing one of the 16 states of Germany. Our time chart
+follows the principle of \textit{superposition} as it renders all features in the same chart \citep*{Gleicher.2018}. The
+bottom-left view visualizes a two-dimensional table connecting each state with each year containing a numerical value.
+A table uses a combination of \textit{super-} and \textit{juxtapostion} which are two of the three basic visual designs for comparison
+from Gleicher \citep*{Gleicher.2018} The "dataset control" and another button, which will be termed "comparison control" are positioned
+in the middle third of the screen close to the navigation bar at the top. The comparison control offers the ability to select two or three of the 16
 states for comparison. After selecting the states and confirming the comparison process the application enters "comparison mode" 
 where three of the six variants render an additional time chart and an additional table view. In both views calculated differences
-between two states of the values of the selected states are displayed. In the time chart again consists of lines representing the temporal
-evolution of the differences and the table view contains the numerical differences as simple numerical values for every year.
+between two states of the values of the selected states are displayed. The time chart again consists of lines representing the temporal
+evolution of the differences, and the table view contains the numerical differences as simple numerical values for every year.
 Those are the already mentioned views that use \textit{explicit encoding} as defined by Gleicher \citep*{Gleicher.2018}. After
 starting the comparison process both views on the left are replaced with other views depending on the interaction technique. \textit{Replace}
 is one of the three common operational models visual interfaces use on parameter change \citep*{Costabile.2004, Roberts.2008}. At any time
 the user can use the comparison control again to terminate the comparison process and all previously described changes are
-reverted. The "dataset control" on the other hand allows the user to change the currently selected dataset via button click.
+reverted. The "dataset control" on the other hand allows the user to change the currently selected dataset via a button click.
 After switching the dataset all views are rerendered with new labels and values.
 
 \begin{longtable}{| p{0.15\linewidth} | p{0.50\linewidth} | p{0.25\linewidth}|}
@@ -66,7 +68,7 @@ After switching the dataset all views are rerendered with new labels and values.
     \hline \multicolumn{3}{r}{{\textit{Continued on next page}}} \\
     \endfoot
     \hline
-    \caption{This table describes all dashboard variants visualized in the web-prototype. The number of views it rendered in "comparison mode" and the interaction technique is displayed \label{dashboard_variant_table}}\\
+    \caption{This table describes all dashboard variants visualized in the web prototype. The number of views it rendered in "comparison mode" and the interaction technique is displayed \label{dashboard_variant_table}}\\
     \endlastfoot
     1 & \parbox{\linewidth}{\vspace{4pt} filtering} & 2\\
     \hline
@@ -83,25 +85,26 @@ After switching the dataset all views are rerendered with new labels and values.
 
 \section{Multiple coordinated views}
 As already stated earlier MCV systems are highly popular and can increase user performance. Baldonado et al. argue that they can provide utility
-by minimizing cognitive overhead created from a single complex view. On the other hand multiple view can also increase cognitive overhead
+by minimizing cognitive overhead created from a single complex view. On the other hand, multiple views can also increase cognitive overhead
 (e.g. context switching) and can raise system requirements. They propose guidelines to find out when to use MCV and how to use MCV
-with special focus on information visualization \citep*{WangBaldonado.2000}. One use of MCV in the prototype is the additional rendering of
+with a special focus on information visualization \citep*{WangBaldonado.2000}. One use of MCV in the prototype is the additional rendering of
 two views when entering the "comparison mode". This mechanism represents the stated example from Baldonado et al. of using MCV to display
-aggregates of the data. The rule of "Decomposition" motivated the use of additional views that aggregate differences when user are asked
-about differences in the first place. As the name MCV already suggest "coordination" is a really important factor when implementing
-multiple views. Baldonado et al. devoted two guideline rules on this because multiple views if not coordinated corectly can create
-confusion and increase computational overhead. Because of that all our interaction techniques are synchronized across all views. Meaning if one
+aggregates of the data. The rule of "Decomposition" motivated the use of additional views that aggregate differences when users are asked
+about differences in the first place. As the name MCV already suggests \textit{coordination} is a really important factor when implementing
+multiple views. Baldonado et al. devoted two guideline rules on this because multiple views if not coordinated correctly can create
+confusion and increase computational overhead. Because of that, all our interaction techniques are synchronized across all views. Meaning if one
 element is highlighted in one view, it is highlighted in all views. When entering the "comparison mode" the specific interaction technique
-is also applied to all views. We also try to optimize screen space by replacing views when entering "comparison mode" or optionally render
-the additional views that aggregate the differences. In that way the "comparison mode" ensures that the additional data is only displayed when the user is aking for it. We ensure that the use of more views does not noticeable increase
-response time when interaction with the application. Finally we use perceptual cues to indicate replacement of views by animating
-the time line drawing on inital render and by changing the labels of the views when changing that datasets. 
+is also applied to all views. We also try to optimize screen space by replacing views when entering "comparison mode" or optionally rendering
+the additional views that aggregate the differences. In that way, the "comparison mode" ensures that the additional data is only displayed when the
+user is asking for it. We ensure that the use of more views does not noticeably increase
+response time when interacting with the application. Finally, we use perceptual cues to indicate the replacement of views by animating
+the timeline drawing on the initial render and by changing the labels of the views when changing the datasets. 
 To further support the "Rule of consistency" we synchronize the "comparison control" and the "dataset control" across all six variants, to reduce
 the computational overhead from context switching.
 
 \section{Non-/Functional requirements}
 This section describes all functional and non-functional requirements on the
-web-prototype. They are the result from the topics explained earlier in this chapter.
+web prototype. They are the result from the topics explained earlier in this chapter.
 
 % \renewcommand{\arraystretch}{3} % Adjust the value as needed
 \begin{longtable}{| p{0.05\linewidth} | p{0.65\linewidth} | p{0.20\linewidth}|}
@@ -117,7 +120,7 @@ web-prototype. They are the result from the topics explained earlier in this cha
     \hline \multicolumn{3}{r}{{\textit{Continued on next page}}} \\
     \endfoot
     \hline
-    \caption{This table describes all functional and non-functional requirements of the web-prototype \label{requirement_table}}\\
+    \caption{This table describes all functional and non-functional requirements of the web prototype \label{requirement_table}}\\
     \endlastfoot
     01 & \parbox{\linewidth}{\vspace{4pt}The app should visualize one spatial-temporal dataset with polygons on a map. Each polygon should represent a spatial entity} & Functional\\
     \hline
@@ -153,13 +156,12 @@ web-prototype. They are the result from the topics explained earlier in this cha
 \end{longtable}
 
 \section{Presentation \&\ Deployment}
-
-The code of the web-prototype can be found on github under the following link: \url{https://github.com/SimonMeissner/geo-dashboard}. A deployed
-version of the prototype can be accessed visiting: \url{https://geo-dashboard.vercel.app/}. In case the deployed version is no longer accessable
-in the future an video recording is also deposited on the github repository.
+The code of the web prototype can be found on GitHub under the following link: \url{https://github.com/SimonMeissner/geo-dashboard}. A deployed
+version of the prototype can be accessed by visiting: \url{https://geo-dashboard.vercel.app/}. In case the deployed version is no longer accessible
+in the future a video recording is also deposited on the GitHub repository.
 
 \begin{figure}[ht]
     \centering
     \frame{\includegraphics[width=15.0cm]{images/prototype_screenshot.png}}
-    \caption{Screenshot of the deployed web-prototype. This shows dashbaord variant 6 with the \textit{highlighting\_2} interaction technique. The german states "Hessen", "Bayern" and "Berlin" selected for comparison.} \label{prototypeScreenshot}
+    \caption{Screenshot of the deployed web prototype. This shows dashbaord variant 6 with the \textit{highlighting\_2} interaction technique. The german states "Hessen", "Bayern" and "Berlin" selected for comparison.} \label{prototypeScreenshot}
 \end{figure}
