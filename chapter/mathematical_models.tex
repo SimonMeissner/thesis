@@ -3,11 +3,11 @@
 \newlist{equations}{enumerate}{1}
 \setlist[statements,1]{label=\arabic*., left=0.5cm}
 \chapter{Mathematical models}
-Because our dataset is limited, we use linear regression to try to derive a function that explains how a possible connection 
+Because our dataset was limited, we used linear regression to try to derive a function that explains how a possible connection 
 between user performance and our independent variables looks. We decided against machine learning because it requires much more
 data to be effective. More observation per independent variable reduces the chances of overfitting and increases the reliability of a regression
 model. There even exist evidence-based guidelines that prescribe having at least 10 observations per independent variable \citep*{Harrell.2015}.
-Considering this we chose the four described variables with their different instances because they ensured having enough observations per
+Considering this, we chose the four described variables with their different instances because they ensured having enough observations per
 variable.
 
 \section{Aggregated Variables}
@@ -19,7 +19,7 @@ continuous variables, which in turn enables linear regression. This requires exi
 First, we want to look at the user performance in terms of their answer time. Because we have so little data available and
 because it simplifies the analysis process, we decided to include all data points, even if the answer was incorrect.
 Inspired by "Fitts‘ Law", which is often used in the research field on human-computer interaction (HCI) we focus on one possible aspect of answer
-time. MacKenzie enhanced the core considerations of Fitts to declare the movement time to be dependent on the difficulty of the task \citep*{MacKenzie.1992}.
+time. MacKenzie enhanced the core considerations of Fitts declaring the movement time to be dependent on the difficulty of the task \citep*{MacKenzie.1992}.
 We transfer this consideration to our answer time variable and propose an index that describes the level of difficulty of the task to which
 the user has answered. Besides the difficulty index, there are $n-1$ more factors that may influence answer time.
 \begin{equation} \label{answerTimeEquation}
@@ -47,7 +47,7 @@ The suitability of views changes across different contexts. One context for exam
 using the view. In our experiment, we used a total of four different task types, which are represented by the four question
 types. Lohse et al. classify visual representations(views)
 depending on the type of information conveyed. They classified 11 different view types and empirically derived Likert
-scores(1-9) for every type of information \citep*{Lohse.1994}. Among other things, they classified \textit{time charts} and 
+scores (1-9) for every type of information \citep*{Lohse.1994}. Among other things, they classified \textit{time charts} and 
 \textit{tables} when dealing with \textit{temporal} or \textit{numerical} information. As the \textit{attribute in space} operand
 asks for \textit{numerical} information and the \textit{space in time} operand asks for \textit{temporal} information, we can 
 use these empirical Likert scores to quantify the quality of the table and time chart used when answering a specific question.
@@ -81,7 +81,7 @@ each distractor as either \textit{similar distractor} containing all distractors
 interface and could also be mistaken to be the target value. As we lack research for quantifying the weights of the different distractors, we
 decided that the similar distractors are twice as distracting as the background distractors. 
 
-To compute the overall distraction all similar distractors
+To compute the overall distraction, all similar distractors
 and background distractors are counted and multiplied by their respective weight resulting in a value that has to be divided by two because a user
 will only use one of the two views (table view \&\ time chart view) simultaneously and both views encode the same information. This is the same principle
 described earlier for the view quality. The resulting value is called the \textit{distraction index}. The number of comparison targets also impacts
@@ -130,7 +130,7 @@ The aggregation of all of our variables and the three numbered assumptions we de
 
 
 \section{Answer accuracy}
-As already explained the answer accuracy was measured binary and therefore multiple linear regression is not an option. Instead, we will use the
+As already explained the answer accuracy was measured in binary and therefore multiple linear regression is not an option. Instead, we will use the
 method of logistic regression to analyze the results. When thinking of factors that could influence the accuracy of an answer we made the
 following assumptions. Because answer time does not matter for the accuracy we concluded that no factor can impede the accuracy of the answer besides the
 distraction that is present on the dashboard. A user can mistakenly confuse the correct answer with all distractors present. We call this variable 

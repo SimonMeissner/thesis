@@ -2,77 +2,77 @@
 This chapter will first try to interpret the results and relatate the findings to previous work. In the following we will use these results to answer
 our research questions. Lastly we will discuss limitations and propose future research directions.
 \section{Modelling user performance in mathematical models}
-Besides the view quality coefficient the aggregated variables that based on our partly nominal-scaled study variables showed almost no correlation with
-the answer time. Trying to fit an linear regression model on the aggregated variables also turned out to be not successful. Because of the exploratory nature
+Besides the view quality coefficient, the aggregated variables that are based on our partly nominal-scaled study variables showed almost no correlation with
+the answer time. Trying to fit a linear regression model on the aggregated variables also turned out to be not successful. Because of the exploratory nature
 of this study we tried transforming various variables
 from the mathematical foundation we assembled. The transformation of the view distraction values showed that an exponential influence of the distraction from each view
 better describes the measured answer times in comparison to a linear influence. Including this finding in a multiple linear regression model using all predictors
 resulted in a still really poorly descriptive model with an adjusted $R^2$ value of $0.14$. Next up we tried transforming the distraction index from \ref{distractionIndexEquation}
 directly. We again found that an exponential influence of the distraction index (which describes the total distraction present) better described our recorded
-anser time values compared to an linear influence. The model using again all three variables showed an adjusted $R^2$ value of $0.16$ which meant that the exponentially
+answer time values compared to a linear influence. The model using again all three variables showed an adjusted $R^2$ value of $0.16$ which meant that the exponentially
 transformed distraction index described the answer times slightly better compared to the previous transformation. We tried combining both transformations but the best
 multiple linear regression model only reached the same adjusted $R^2$ value of the view distraction transformation. Lastly we aggregated all our aggregated variables
 into one called difficulty index (equation \ref{difficultyIndexEquation}) and observed how transformations of this value would perform compared to the other approaches.
-The model had and adjusted $R^2$ value of $0.078$ and therefore described the answer times even worse than or initial model with no transformations.
+The model had an adjusted $R^2$ value of $0.078$ and therefore described the answer times even worse than or initial model with no transformations.
 We also fitted multiple linear models over the mean (and in our case also median) values of answer times of every unique variable combination because human performance
-tends to vary a lot across different participants. The best model scored an adjusted $R^2$ value of $0.18$ which still indicates a poor descriptive model. Excluding
-the number of views variable as it showed no relation to the answer time did only reduce the quality of the model more. Concluding we can say that the distraction index
+tends to vary a lot across different participants. The best model scored an adjusted $R^2$ value of $0.18$ which still indicates a poor descriptive model. The
+number of views variable did only reduce the quality of the model further, probably because it showed no relation to the answer time. Concluding we can say that the distraction index
 did not describe our measured answer time values well. It seems that an exponential influence of the distraction performs better compared to an linear influence.
-But this must be taken with caution because brute forcing different transformation always come at the cost of fitting the data by chance. It also seems that the number of views
-could not describe the answer time very well. Because the inverse term of the quality of views showed an moderate correlation with the answer time and graphically also showed
-differences across groups we decided to do an variance analysis which will be interpreted later.
+But this must be taken with caution because brute forcing different transformations always come at the cost of fitting the data by chance. It also seems that the number of views
+could not describe the answer time very well. Because the inverse term of the quality of views showed a moderate correlation with the answer time and graphically also showed
+differences across groups we decided to do a variance analysis which will be interpreted later.
 
 The search for good models describing answer accuracy was similarly sobering. The transformation of the discriminability index that resulted in
-the best logristic regression model in terms of p values was the one where the values were squareroot-transformed (p-value of $0.94$). This is 
+the best logistic regression model in terms of p values was the one where the values were squareroot-transformed (p-value of $0.94$). This is 
 statistically still an unsignificant description and also the correlation indices showed no correlation with any transformation which in combination is
 why we stopped the search for finding mathematical models based on the discriminability index. It seems that the discriminability index could not
 accuratly describe the answer accuracy.
 \section{User performance depending on interaction technique}
 To answer the second research question on which interaction technique best supports the task of comparison in the context of geo-dashboards we chose to analyse the variances
-across groups. Regarding answer time we chose to use anova to analyse group differences. The chi squared test method was used to analyse answer accuracy.
-We setted the confidence level for all tests to $0.05$. The anova test did not show any significant mean answer time differences across groups as the p-values were above
-the confidence level of $0.05$. The chi squared test between the
-answer accuracy and the interaction technique showed an p-value way greater than $0.05$ which means that we have to reject the null hypothesis about there beeing significant differences
+across groups. Regarding answer time we chose to use ANOVA to analyse group differences. The chi-squared test method was used to analyse answer accuracy.
+We set the confidence level for all tests to $0.05$. The ANOVA test did not show any significant mean answer time differences across groups as the p-values were above
+the confidence level of $0.05$. The chi-squared test between the
+answer accuracy and the interaction technique showed a p-value way greater than $0.05$ which means that we have to reject the null hypothesis about there being significant differences
 between different interaction techniques. Regarding the second research question we could not detect any significant user performance differences across the different interaction techniques.
 Neither answer time nor answer accuracy seemed to be affected by the interaction technique. Visually small differences between the performance of the interaction techniques regarding answer time
 are visible (figure \ref{boxplotsStudyVariablesAnswerTimefigure}), but nothing that could be interpreted as beeing statistically significant as we have seen. Interestingly
 the questions about the subjective feedback revealed that the participants disliked \textit{highlighting\_1} more compared to the other techniques.
 
 \section{Additional results}
-The variance analysis of the other raw study variables and the answer time delivered mixed results. The anova tests
-about the answer time revealed that we can reject the null hypothesis (answer time means are equal across groups) about two of the four variables.
+The variance analysis of the other raw study variables and the answer time delivered mixed results. The ANOVA tests
+about the answer time revealed that we must reject the null hypothesis (answer time means are equal across groups) about two of the four variables.
 We used levene tests to check for homoscedasticity in all variables. The null hypothesis of the levene tests states that the variances across groups stay equal.
-The levene test between the residuals of the anova test between the number of comparison targets and the answer time showed an p-value of $0.029$ displays an significant result
-because of the significance level of $0.05$. That means we have to reject the null hypothesis and the condition of homoscedasticity for the anova test is not met.
+The levene test between the residuals of the ANOVA test between the number of comparison targets and the answer time showed a p-value of $0.029$ displaying a significant result
+because of the significance level of $0.05$. That means we have to reject the null hypothesis and the condition of homoscedasticity for the ANOVA test is not met.
 A log10-transformation of the the answer time resulted in a p-value of $0.66$ in the levene test which confirmed homoscedasticity after the transformation.
-The anova test between the log10-transformed answer time values and the number of comparison targets delivered an p-value of $0.00012$ which meant we could reject the
-null hypothesis and we have significantly differences between the groups of number of comparison targets regarding the mean log10-transformed answer time values.
+The ANOVA test between the log10-transformed answer time values and the number of comparison targets delivered a p-value of $0.00012$ which means we reject the
+null hypothesis and we have significant difference between the groups of number of comparison targets regarding the mean log10-transformed answer time values.
 Because the number of comparison targets only had two groups (2 targets or 3 targets) we can also conclude that the means of the answer time between comparison
 questions addressing 2 comparison targets and comparison questions addressing 3 comparison targets significantly differ. Looking at figure \ref{boxplotsStudyVariablesAnswerTimefigure}
-we can graphically derive that the mean of answer time increased with the number of comparison targets. This observation comfirmes the statement of Gleicher that
+we can graphically derive that the mean of answer time increased with the number of comparison targets. This observation confirmes the statement of Gleicher that
 the comparison task grows more difficult the more targets are compared simultaneously \citep*{Gleicher.2018}. 
-The levene test between the residuals of the anova test with untransformed values between the question type and the answer time also delivered an p-value < $0.05$.
-We also used a log10-transformation on the answer time to introduce homoscedasticity. The anova test with the question type also showed an p-value of
-< $0.05$ ($1.68 \times 10^{-7}$) which means that there are also statistical significant mean differences across the 4 question types in terms of the
+The levene test between the residuals of the ANOVA test with untransformed values between the question type and the answer time also delivered a p-value < $0.05$.
+We also used a log10-transformation on the answer time to introduce homoscedasticity. The ANOVA test with the question type also showed a p-value of
+< $0.05$ ($1.68 \times 10^{-7}$) which means that there are also statistically significant mean differences across the 4 question types in terms of the
 log10-transformed answer time. Because we did not include a post-hoc analysis at this point we can only speculate about the types that differ from another. Looking
 again at figure \ref{boxplotsStudyVariablesAnswerTimefigure} we can visually see an increase in mean answer time for type4 in comparison to the remaining question types.
 This coincides with the often reported high difficulty of the question of type4 using 3 comparison targets from the participants in the subjective feedback.
-The anova test on the number of views did not show any significant mean answer time differences across groups as the p-value was way above
+The ANOVA test on the number of views did not show any significant mean answer time differences across groups as the p-value was way above
 the confidence level of $0.05$.
 
-The influence of the study variables on the answer accuracy was measured using the chi squared test and the fisher's exact test. Regarding the
-number of view and the number of comparison targets the tests returned an p-value greater than $0.05$ which means
-that we have to reject the null hypothesis about there beeing significant differences on the answer accuracy across groups. Interestingly the
-chi squared test about the question type returned an p-value of $0.023$ which is < $0.05$. Because one of the precondition of the chi squared test
-required the expected cell frequencies of the contengency table to be not smaller than 5 we validated the result using the fisher's exact test which also
-returned an p-value < $0.05$ ($0.039$) and therefore indicates significant differences across groups regarding the answer accuracy. Meaning there is a significant
+The influence of the study variables on the answer accuracy was measured using the chi-squared test and the fisher's exact test. Regarding the
+number of views and the number of comparison targets the tests returned a p-value greater than $0.05$ which means
+that we have to reject the null hypothesis about there being significant differences in answer accuracy across groups. Interestingly the
+chi-squared test about the question type returned a p-value of $0.023$ which is < $0.05$. Because one of the preconditions of the chi-squared test
+required the expected cell frequencies of the contingency table to be not smaller than 5 we validated the result using the fisher's exact test which also
+returned a p-value < $0.05$ ($0.039$) and therefore indicates significant differences across groups regarding the answer accuracy. Hence there is a significant
 difference between correctly and incorrectly answered questions between at least two groups of question types.
 
-Out of all aggregated variables $\frac{1}{q_{view}}$ was the only variable that showed an moderate positive relation to the answer time with a linear correlation coefficient of $0.33$.
-Because the levene test of the residual of the anova test using the untransformed answer time values showed uneven variances across groups the anova test was repeated
-using log10-transformed answer values. The levene test returned an p-value of $0.17$ which means the null hypothesis of can be accepted an the variances across groups are even.
-The result of the anova test between the log10-transformed answer time values and the $\frac{1}{q_{view}}$ showed that there were siginificant differences between
-the two groups of view quality because of the p-value beeing < $0.05$. Together with the correlation coefficient we can conclude that the mean log10-transformed answer times
+Out of all aggregated variables $\frac{1}{q_{view}}$ was the only variable that showed a moderate positive relation to the answer time with a linear correlation coefficient of $0.33$.
+Because the levene test of the residual of the ANOVA test using the untransformed answer time values showed uneven variances across groups the ANOVA test was repeated
+using log10-transformed answer values. The levene test returned a p-value of $0.17$ which means the null hypothesis can be accepted and the variances across groups are even.
+The result of the ANOVA test between the log10-transformed answer time values and the $\frac{1}{q_{view}}$ showed that there were siginificant differences between
+the two groups in view quality because of the p-value beeing < $0.05$. Together with the correlation coefficient we can conclude that the mean log10-transformed answer times
 grow if the quality of the views fall. This does not only give evidence to our assumed mathematical correlation captured in equation \ref{qualityViewEquation} it also backs up
 the observations about view quality regarding the information conveyed in the paper from Lohse et al. from 1994 \citep{Lohse.1994}.
 
@@ -94,7 +94,7 @@ suggests the existence of complex data with multiple attributes or models \citep
 time series \citep*{Keim.2005}. It only consisted of one attribute and it was also observed that on the questions that did not ask for differences among
 the comparison targets (type1 and type3) the additional views only presented more distraction from the target values. In these questions the additional views did not
 help the participant in terms of user performance it only increased cognitive demand. This finding conflicts with our aggregated variable from \ref{difficultyIndexEquation}
-where the difficulty index was modeled to be inversely dependent on the number of views. This possible negative effect on the difficulty index and therefore on the
+where the difficulty index was modelled to be inversely dependent on the number of views. This possible negative effect on the difficulty index and therefore on the
 answer time could explain the insignificant differences between answering questions using four views compared to using two views. To better observe the effect of
 multiple views future work should focus on using multiple views accordingly which also includes choosing complex enough data that justifies the use.
 
@@ -122,6 +122,12 @@ for the general population and all findings have to be regarded to only be appli
 
 We could not confirm any user performance differences between our different interaction techniques but the asymmetry in the subjective feedback and the slight visual differences
 shows the need for additional research. Generally focusing on one or two of our selected variables and adding more groups seems also a good idea in this context. Focusing on
-variables that already has been confirmed to show performance differences like the number of comparison targets and then researching the effect of different interaction
-techniques should reveal any differences more because the effect of the individual interaction techniques also grows stronger. In this example, the influence of the number
-of comparison targets could also be investigated further because more groups than two allow for analysis of underlying mathematical dependency (logarithmic influence, exponential influence, etc.)
+variables that already have been confirmed to show performance differences like the number of comparison targets and then researching the effect of different interaction
+techniques should reveal any differences more because the effect of the individual interaction techniques grows stronger. In this example, the influence of the number
+of comparison targets could also be investigated further because more groups than two allow for analysis of the underlying mathematical dependency (logarithmic influence, exponential influence, etc.)
+
+The experiment analyzed spatial-temporal data with changes in thematic properties. As mentioned in section \ref*{dataSection},
+spatiotemporal data can come in different types \citep*{Andrienko.2003}. Besides the countless comparative question types that
+can be imagined, comparisons can also involve different dimensions. In our study, we focused on comparing subsets. However,
+comparison can also include different variables or projections of the entire dataset \citep*{Buja.1996}. It is important to
+interpret the results in light of these considerations, as they cannot be generalized.

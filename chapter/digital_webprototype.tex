@@ -2,14 +2,14 @@
 The prototype is created with the open-source web development framework next.js, which offers react-based javascript- or
 typescript-based applications with server-side rendering and static website generation. It is mostly selected because of its
 developer-friendly ecosystem, especially regarding deployment. Another reason for this stack is the existing experience
-with react-based typescript and the lightweight, modern setup. The whole application is using of a few react libraries.
+with react-based typescript and the lightweight, modern setup. The whole application makes use of a few react libraries.
 The most important being the popular "react-leaflet" library which drastically simplifies the use of leaflet maps in react
 applications. Other important libraries are: "zustand" to help with coordination, "recharts" to help build timelines, and
 "tailwindcss" to simplify the design process of the application. Because the experiment is designed to be held online the
 application needs to be deployed. For that, we use the free deployment plan of vercel.com. Because the application is only
 using non-personal static data there is no need for implementing a backend or an authentication system. Although the prototype
 takes responsive behavior into account the screen dimension of the user's device should not fall below 1280x720px. 
-\section{Data}
+\section{Data} \label{dataSection}
 The data used in the web prototype consists of two components. First, we implement georeferenced data of the states of Germany. In terms of
 performance, low-resolution geojson data with a reference scale of 1:5000000 is used. We utilize open-source data
 from the German Federal Agency for cartography and geodesy \citep*{gdz.bkg}. The questions in the study are about static
@@ -48,13 +48,7 @@ states for comparison. After selecting the states and confirming the comparison 
 where three of the six variants render an additional time chart and an additional table view. In both views calculated differences
 between two states of the values of the selected states are displayed. The time chart again consists of lines representing the temporal
 evolution of the differences, and the table view contains the numerical differences as simple numerical values for every year.
-Those are the already mentioned views that use \textit{explicit encoding} as defined by Gleicher \citep*{Gleicher.2018}. After
-starting the comparison process both views on the left are replaced with other views depending on the interaction technique. \textit{Replace}
-is one of the three common operational models visual interfaces use on parameter change \citep*{Costabile.2004, Roberts.2008}. At any time
-the user can use the comparison control again to terminate the comparison process and all previously described changes are
-reverted. The "dataset control" on the other hand allows the user to change the currently selected dataset via a button click.
-After switching the dataset all views are rerendered with new labels and values.
-
+Those are the already mentioned views that use \textit{explicit encoding} as defined by Gleicher \citep*{Gleicher.2018}.
 \begin{longtable}{| p{0.15\linewidth} | p{0.50\linewidth} | p{0.25\linewidth}|}
     \hline
     \textbf{Variant} & \textbf{Interaction technique} & \textbf{Number of views} \\
@@ -82,6 +76,18 @@ After switching the dataset all views are rerendered with new labels and values.
     \hline
     6 & \parbox{\linewidth}{\vspace{4pt} highlighting\_2} & 4\\
 \end{longtable}
+After starting the comparison process both views on the left are replaced with other views depending on the interaction technique. \textit{Replace}
+is one of the three common operational models visual interfaces use on parameter change \citep*{Costabile.2004, Roberts.2008}.
+Figure \ref{prototypeScreenshot} shows dashboard variant 6 in "comparison mode" comparing Hessen, Bayern and Berlin. At any time
+the user can use the comparison control again to terminate the comparison process and all previously described changes are
+reverted. The "dataset control" on the other hand allows the user to change the currently selected dataset via a button click.
+After switching the dataset all views are rerendered with new labels and values.
+
+\begin{figure}[ht]
+    \centering
+    \frame{\includegraphics[width=15.0cm]{images/prototype_screenshot.png}}
+    \caption{Screenshot of the deployed web prototype. This shows dashbaord variant 6 with the \textit{highlighting\_2} interaction technique. The german states "Hessen", "Bayern" and "Berlin" are selected for comparison.} \label{prototypeScreenshot}
+\end{figure}
 
 \section{Multiple coordinated views}
 As already stated earlier MCV systems are highly popular and can increase user performance. Baldonado et al. argue that they can provide utility
@@ -132,11 +138,11 @@ web prototype. They are the result from the topics explained earlier in this cha
     \hline
     05 & \parbox{\linewidth}{\vspace{4pt}The app should provide six different dashboard versions that differ in their interaction technique and number of rendered views for comparing spatial entities} & Functional\\
     \hline
-    06 & \parbox{\linewidth}{\vspace{4pt}The app consists of version 1 where in comparison mode only the selected entities are filtered and shown in all views. It represents a 'filtering' interaction technique} & Functional\\
+    06 & \parbox{\linewidth}{\vspace{4pt}The app consists of version 1 where only the selected entities are displayed. It represents a 'filtering' interaction technique} & Functional\\
     \hline
-    07 & \parbox{\linewidth}{\vspace{4pt}The app consists of version 2 where in comparison mode the selected entities are visually emphasized using one color. It represents a 'highlighting' interaction technique} & Functional\\
+    07 & \parbox{\linewidth}{\vspace{4pt}The app consists of version 2 where the selected entities are visually emphasized using one color in comparison mode. It represents a 'highlighting' interaction technique} & Functional\\
     \hline
-    08 & \parbox{\linewidth}{\vspace{4pt}The app consists of version 3 where in comparison mode the selected entities are visually emphasized using multiple colors. One for each entity. It represents a 'highlighting' interaction technique} & Functional\\
+    08 & \parbox{\linewidth}{\vspace{4pt}The app consists of version 3 where the selected entities are visually emphasized using multiple colors in comparison mode. One color for each entity. It represents a 'highlighting' interaction technique} & Functional\\
     \hline
     09 & \parbox{\linewidth}{\vspace{4pt}The app consists of version 4 which is a copy of version 1 described in requirement 06. In addition, one more view that meets requirement 02 and one more view that meets requirement 03 are displayed in comparison mode. These additional views encode the subtracted values of the selected entities forming views that encode 'differences'. For every combination of the selected entities one additional data series is displayed.} & Functional\\
     \hline
@@ -159,9 +165,3 @@ web prototype. They are the result from the topics explained earlier in this cha
 The code of the web prototype can be found on GitHub under the following link: \url{https://github.com/SimonMeissner/geo-dashboard}. A deployed
 version of the prototype can be accessed by visiting: \url{https://geo-dashboard.vercel.app/}. In case the deployed version is no longer accessible
 in the future a video recording is also deposited on the GitHub repository.
-
-\begin{figure}[ht]
-    \centering
-    \frame{\includegraphics[width=15.0cm]{images/prototype_screenshot.png}}
-    \caption{Screenshot of the deployed web prototype. This shows dashbaord variant 6 with the \textit{highlighting\_2} interaction technique. The german states "Hessen", "Bayern" and "Berlin" selected for comparison.} \label{prototypeScreenshot}
-\end{figure}
